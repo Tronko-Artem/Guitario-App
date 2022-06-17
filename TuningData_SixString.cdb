@@ -1,0 +1,112 @@
+{
+	"sheets": [
+		{
+			"name": "TuningData",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "tuningName"
+				},
+				{
+					"typeStr": "1",
+					"name": "tuningForm"
+				},
+				{
+					"typeStr": "1",
+					"name": "tuningShift"
+				}
+			],
+			"lines": [
+				{
+					"tuningName": "Standard",
+					"tuningForm": "E A D G B E",
+					"tuningShift": "4,9,14,19,23,28"
+				},
+				{
+					"tuningName": "Drop D",
+					"tuningForm": "D A D G B E",
+					"tuningShift": "2,9,14,19,23,28"
+				},
+				{
+					"tuningName": "Open D",
+					"tuningForm": "D A D F# A D",
+					"tuningShift": "2,9,14,18,21,26"
+				},
+				{
+					"tuningName": "Open G",
+					"tuningForm": "D G D G B D",
+					"tuningShift": "2,7,14,19,23,26"
+				},
+				{
+					"tuningName": "DADGAD",
+					"tuningForm": "D A D G A D",
+					"tuningShift": "2,9,14,19,21,26"
+				},
+				{
+					"tuningName": "Drop E",
+					"tuningForm": "E B E A C# F#",
+					"tuningShift": "4,11,16,21,25,30"
+				},
+				{
+					"tuningName": "Drop F",
+					"tuningForm": "F C F A# D G",
+					"tuningShift": "5,12,17,22,26,31"
+				},
+				{
+					"tuningName": "Drop G",
+					"tuningForm": "G D G C E A",
+					"tuningShift": "7,14,19,24,28,33"
+				},
+				{
+					"tuningName": "Open Dm",
+					"tuningForm": "D A D F A D",
+					"tuningShift": "2,9,14,17,21,26"
+				},
+				{
+					"tuningName": "Open E",
+					"tuningForm": "E B E G# B E",
+					"tuningShift": "4,11,16,20,23,28"
+				},
+				{
+					"tuningName": "Open Em",
+					"tuningForm": "E B E G B E",
+					"tuningShift": "4,11,16,19,23,28"
+				},
+				{
+					"tuningName": "Open F",
+					"tuningForm": "C F C F A C",
+					"tuningShift": "0,5,12,17,21,24"
+				},
+				{
+					"tuningName": "Open Fm",
+					"tuningForm": "F A C F C F",
+					"tuningShift": "5,9,12,17,24,29"
+				},
+				{
+					"tuningName": "Open A",
+					"tuningForm": "E A E A C# E",
+					"tuningShift": "4,9,16,21,25,28"
+				},
+				{
+					"tuningName": "Open Am",
+					"tuningForm": "E A E A C E",
+					"tuningShift": "4,9,16,21,24,28"
+				},
+				{
+					"tuningName": "Open C",
+					"tuningForm": "C G C G C E",
+					"tuningShift": "0,7,12,19,24,28"
+				},
+				{
+					"tuningName": "Open Cm",
+					"tuningForm": "C G C G C D#",
+					"tuningShift": "0,7,12,19,24,27"
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

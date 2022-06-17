@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Fade_In"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.117647, 0.117647, 0.117647, 0 ), Color( 0.117647, 0.117647, 0.117647, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Fade_Out"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.117647, 0.117647, 0.117647, 1 ), Color( 0.117647, 0.117647, 0.117647, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="RootNoteChoice" type="Panel"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1080.0
+margin_bottom = 2400.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Fade_In = SubResource( 1 )
+anims/Fade_Out = SubResource( 2 )
+anims/RESET = SubResource( 3 )

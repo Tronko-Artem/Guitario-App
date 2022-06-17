@@ -1,0 +1,94 @@
+<svg width="120px" height="1000px" viewBox="0 0 1080 10500" style="stroke-width:15">
+  <linearGradient id="string-pattern">
+    <stop offset="5%" stop-color="#888"/>
+    <stop offset="50%" stop-color="#FFF"/>
+    <stop offset="95%" stop-color="#888"/>
+  </linearGradient>
+  <defs>
+    <style type="text/css">
+      @import url(&apos;https://fonts.googleapis.com/css2?family=Open+Sans&apos;);
+    </style>
+  </defs>
+  <g style="font:bold 100px sans-serif;fill:white;fill-opacity:0.5;font-family:Open Sans">
+    <text x="-50" y="480">1</text>
+    <text x="-50" y="880">2</text>
+    <text x="-50" y="1280">3</text>
+    <text x="-50" y="1680">4</text>
+    <text x="-50" y="2080">5</text>
+    <text x="-50" y="2480">6</text>
+    <text x="-50" y="2880">7</text>
+    <text x="-50" y="3280">8</text>
+    <text x="-50" y="3680">9</text>
+    <text x="-80" y="4080">10</text>
+    <text x="-80" y="4480">11</text>
+    <text x="-80" y="4880">12</text>
+    <text x="-80" y="5280">13</text>
+    <text x="-80" y="5680">14</text>
+    <text x="-80" y="6080">15</text>
+    <text x="-80" y="6480">16</text>
+    <text x="-80" y="6880">17</text>
+    <text x="-80" y="7280">18</text>
+    <text x="-80" y="7680">19</text>
+    <text x="-80" y="8080">20</text>
+    <text x="-80" y="8480">21</text>
+    <text x="-80" y="8880">22</text>
+    <text x="-80" y="9280">23</text>
+    <text x="-80" y="9680">24</text>
+  </g>
+  <g style="stroke:black;stroke-width:1">
+    <g style="fill:rgb(242,190,104)">
+      <rect x="40" y="0" width="1000.0" height="10000"/>
+    </g>
+    <g style="stroke:black;stroke-width:2;fill:rgb(240,240,240)">
+      <rect x="10" y="190.0" width="1060.0" height="100"/>
+    </g>
+    <g style="stroke:black;stroke-width:1;fill:rgb(192,192,192)">
+      <rect x="40" y="620" width="1000.0" height="45"/>
+      <rect x="40" y="1020" width="1000.0" height="45"/>
+      <rect x="40" y="1420" width="1000.0" height="45"/>
+      <rect x="40" y="1820" width="1000.0" height="45"/>
+      <rect x="40" y="2220" width="1000.0" height="45"/>
+      <rect x="40" y="2620" width="1000.0" height="45"/>
+      <rect x="40" y="3020" width="1000.0" height="45"/>
+      <rect x="40" y="3420" width="1000.0" height="45"/>
+      <rect x="40" y="3820" width="1000.0" height="45"/>
+      <rect x="40" y="4220" width="1000.0" height="45"/>
+      <rect x="40" y="4620" width="1000.0" height="45"/>
+      <rect x="40" y="5020" width="1000.0" height="45"/>
+      <rect x="40" y="5420" width="1000.0" height="45"/>
+      <rect x="40" y="5820" width="1000.0" height="45"/>
+      <rect x="40" y="6220" width="1000.0" height="45"/>
+      <rect x="40" y="6620" width="1000.0" height="45"/>
+      <rect x="40" y="7020" width="1000.0" height="45"/>
+      <rect x="40" y="7420" width="1000.0" height="45"/>
+      <rect x="40" y="7820" width="1000.0" height="45"/>
+      <rect x="40" y="8220" width="1000.0" height="45"/>
+      <rect x="40" y="8620" width="1000.0" height="45"/>
+      <rect x="40" y="9020" width="1000.0" height="45"/>
+      <rect x="40" y="9420" width="1000.0" height="45"/>
+      <rect x="40" y="9820" width="1000.0" height="45"/>
+    </g>
+    <g style="stroke:black;stroke-width:1;fill:rgb(255,255,240)">
+      <circle cx="545.0" cy="1250" r="65"/>
+      <circle cx="545.0" cy="2050" r="65"/>
+      <circle cx="545.0" cy="2850" r="65"/>
+      <circle cx="545.0" cy="3650" r="65"/>
+      <circle cx="290.0" cy="4850" r="65"/>
+      <circle cx="800.0" cy="4850" r="65"/>
+      <circle cx="545.0" cy="6050" r="65"/>
+      <circle cx="545.0" cy="6850" r="65"/>
+      <circle cx="545.0" cy="7650" r="65"/>
+      <circle cx="545.0" cy="8450" r="65"/>
+      <circle cx="290.0" cy="9650" r="65"/>
+      <circle cx="800.0" cy="9650" r="65"/>
+    </g>
+    <g style="stroke:black;stroke-width:0.5;fill:url(#string-pattern)">
+      <rect x="105.0" y="0" width="35" height="10400"/>
+      <rect x="275.0" y="0" width="32" height="10400"/>
+      <rect x="445.0" y="0" width="29" height="10400"/>
+      <rect x="620.0" y="0" width="24" height="10400"/>
+      <rect x="790.0" y="0" width="21" height="10400"/>
+      <rect x="960.0" y="0" width="18" height="10400"/>
+    </g>
+  </g>
+</svg>

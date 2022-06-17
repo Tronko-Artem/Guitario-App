@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/E2.wav-e791eaee792b9bf1cf697164a34460ef.sample"
+
+[deps]
+
+source_file="res://files/note_sounds/E2.wav"
+dest_files=[ "res://.import/E2.wav-e791eaee792b9bf1cf697164a34460ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

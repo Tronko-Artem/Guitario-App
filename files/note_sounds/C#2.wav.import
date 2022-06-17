@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/C#2.wav-bdcc229a6584da65c7195a441011f214.sample"
+
+[deps]
+
+source_file="res://files/note_sounds/C#2.wav"
+dest_files=[ "res://.import/C#2.wav-bdcc229a6584da65c7195a441011f214.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

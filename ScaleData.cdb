@@ -1,0 +1,92 @@
+{
+	"sheets": [
+		{
+			"name": "ScaleData",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "scaleName"
+				},
+				{
+					"typeStr": "1",
+					"name": "scaleForm",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"scaleName": "none",
+					"scaleForm": "000000000000"
+				},
+				{
+					"scaleName": "chromatic",
+					"scaleForm": "111111111111"
+				},
+				{
+					"scaleName": "major",
+					"scaleForm": "101011010101"
+				},
+				{
+					"scaleName": "minor",
+					"scaleForm": "101101011010"
+				},
+				{
+					"scaleName": "maj pentatonic",
+					"scaleForm": "101010010100"
+				},
+				{
+					"scaleName": "min pentatonic",
+					"scaleForm": "100101010010"
+				},
+				{
+					"scaleName": "ionian",
+					"scaleForm": "101011010101"
+				},
+				{
+					"scaleName": "dorian",
+					"scaleForm": "101101010110"
+				},
+				{
+					"scaleName": "phrygian",
+					"scaleForm": "110101011010"
+				},
+				{
+					"scaleName": "lydian",
+					"scaleForm": "101010110101"
+				},
+				{
+					"scaleName": "mixolydian",
+					"scaleForm": "101011010110"
+				},
+				{
+					"scaleName": "aeolian",
+					"scaleForm": "101101011010"
+				},
+				{
+					"scaleName": "locrian",
+					"scaleForm": "110101101010"
+				},
+				{
+					"scaleName": "melodic min",
+					"scaleForm": "101101010101"
+				},
+				{
+					"scaleName": "harmonic min",
+					"scaleForm": "101101011001"
+				},
+				{
+					"scaleName": "maj blues",
+					"scaleForm": "101110010100"
+				},
+				{
+					"scaleName": "min blues",
+					"scaleForm": "100101110010"
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

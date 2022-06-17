@@ -1,0 +1,2486 @@
+{
+	"sheets": [
+		{
+			"name": "Standard",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "noteName"
+				},
+				{
+					"typeStr": "8",
+					"name": "chordForm",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"noteName": "A",
+					"chordForm": [
+						{
+							"formName": "maj",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,2,0"
+								},
+								{
+									"formShape": "!,!,2,2,2,5"
+								},
+								{
+									"formShape": "5,7,7,6,5,5"
+								},
+								{
+									"formShape": "!,!,7,9,10,9"
+								},
+								{
+									"formShape": "!,12,11,9,10,!"
+								}
+							]
+						},
+						{
+							"formName": "min",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,1,0"
+								},
+								{
+									"formShape": "5,7,7,5,5,5"
+								},
+								{
+									"formShape": "!,!,7,9,10,8"
+								},
+								{
+									"formShape": "!,12,10,9,10,!"
+								},
+								{
+									"formShape": "!,12,14,14,13,12"
+								}
+							]
+						},
+						{
+							"formName": "7",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,0,2,0"
+								},
+								{
+									"formShape": "!,0,2,2,2,3"
+								},
+								{
+									"formShape": "5,7,5,6,5,5"
+								},
+								{
+									"formShape": "!,!,7,9,8,9"
+								},
+								{
+									"formShape": "!,10,!,9,10,9"
+								}
+							]
+						},
+						{
+							"formName": "m7",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,1,3"
+								},
+								{
+									"formShape": "!,0,2,0,1,0"
+								},
+								{
+									"formShape": "5,7,5,5,5,5"
+								},
+								{
+									"formShape": "!,!,7,9,8,8"
+								},
+								{
+									"formShape": "!,12,10,12,10,12"
+								}
+							]
+						},
+						{
+							"formName": "maj7",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,1,2,0"
+								},
+								{
+									"formShape": "5,4,2,2,2,4"
+								},
+								{
+									"formShape": "5,4,6,6,!,!"
+								},
+								{
+									"formShape": "!,!,7,6,5,4"
+								},
+								{
+									"formShape": "5,7,6,6,5,5"
+								},
+								{
+									"formShape": "!,!,7,9,9,9"
+								},
+								{
+									"formShape": "!,12,11,9,9,!"
+								}
+							]
+						},
+						{
+							"formName": "7b5",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,2,2,3"
+								},
+								{
+									"formShape": "5,4,5,6,4,!"
+								},
+								{
+									"formShape": "5,6,5,6,8,5"
+								},
+								{
+									"formShape": "!,!,7,8,8,9"
+								},
+								{
+									"formShape": "!,12,13,12,14,!"
+								}
+							]
+						},
+						{
+							"formName": "m7b5",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,2,1,3"
+								},
+								{
+									"formShape": "5,6,5,8,8,8"
+								},
+								{
+									"formShape": "!,!,7,8,8,8"
+								},
+								{
+									"formShape": "!,10,10,8,10,!"
+								},
+								{
+									"formShape": "!,12,13,12,13,!"
+								}
+							]
+						},
+						{
+							"formName": "sus2",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,0,0"
+								},
+								{
+									"formShape": "!,2,2,2,0,!"
+								},
+								{
+									"formShape": "5,2,2,2,5,5"
+								},
+								{
+									"formShape": "5,2,2,4,5,!"
+								},
+								{
+									"formShape": "!,!,7,4,5,5"
+								},
+								{
+									"formShape": "!,!,7,9,10,7"
+								},
+								{
+									"formShape": "!,12,9,9,10,!"
+								}
+							]
+						},
+						{
+							"formName": "sus4",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,3,0"
+								},
+								{
+									"formShape": "0,0,0,2,3,0"
+								},
+								{
+									"formShape": "!,!,7,9,10,10"
+								},
+								{
+									"formShape": "!,12,12,9,10,!"
+								}
+							]
+						},
+						{
+							"formName": "aug",
+							"formKinds": [
+								{
+									"formShape": "!,0,3,2,2,1"
+								},
+								{
+									"formShape": "5,4,3,2,2,!"
+								},
+								{
+									"formShape": "5,4,3,6,6,!"
+								},
+								{
+									"formShape": "5,4,7,6,6,!"
+								},
+								{
+									"formShape": "!,!,11,10,10,9"
+								},
+								{
+									"formShape": "!,12,11,10,10,!"
+								},
+								{
+									"formShape": "!,!,11,10,10,13"
+								}
+							]
+						},
+						{
+							"formName": "dim",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,2,1,!"
+								},
+								{
+									"formShape": "5,6,7,5,!,!"
+								},
+								{
+									"formShape": "!,!,7,5,4,5"
+								},
+								{
+									"formShape": "!,!,7,8,10,8"
+								},
+								{
+									"formShape": "!,!,10,8,10,8"
+								},
+								{
+									"formShape": "!,!,13,14,13,11"
+								},
+								{
+									"formShape": "!,15,13,14,13,!"
+								}
+							]
+						},
+						{
+							"formName": "dim7",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,2,1,2"
+								},
+								{
+									"formShape": "5,6,7,5,7,5"
+								},
+								{
+									"formShape": "5,3,4,5,4,!"
+								},
+								{
+									"formShape": "5,6,4,5,4,!"
+								}
+							]
+						},
+						{
+							"formName": "5",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,!,!"
+								},
+								{
+									"formShape": "!,0,2,2,5,5"
+								},
+								{
+									"formShape": "5,7,7,!,!,!"
+								},
+								{
+									"formShape": "!,!,7,9,10,!"
+								},
+								{
+									"formShape": "!,12,14,14,!,!"
+								}
+							]
+						},
+						{
+							"formName": "6",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,2,2"
+								},
+								{
+									"formShape": "5,4,2,2,2,2"
+								},
+								{
+									"formShape": "5,4,2,2,5,2"
+								},
+								{
+									"formShape": "!,!,7,9,7,9"
+								},
+								{
+									"formShape": "!,12,14,14,14,14"
+								}
+							]
+						},
+						{
+							"formName": "m6",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,1,2"
+								},
+								{
+									"formShape": "5,7,7,5,7,5"
+								},
+								{
+									"formShape": "5,3,2,2,5,2"
+								},
+								{
+									"formShape": "5,3,4,2,!,!"
+								},
+								{
+									"formShape": "!,!,7,9,7,8"
+								},
+								{
+									"formShape": "!,12,10,11,10,12"
+								}
+							]
+						},
+						{
+							"formName": "mb6",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,1,1"
+								},
+								{
+									"formShape": "5,7,7,5,6,5"
+								},
+								{
+									"formShape": "8,!,7,9,6,!"
+								},
+								{
+									"formShape": "!,12,10,10,10,12"
+								},
+								{
+									"formShape": "!,12,14,14,13,13"
+								}
+							]
+						},
+						{
+							"formName": "9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,4,2,3"
+								},
+								{
+									"formShape": "5,4,5,4,5,!"
+								},
+								{
+									"formShape": "5,7,5,6,5,7"
+								},
+								{
+									"formShape": "!,!,7,6,8,7"
+								},
+								{
+									"formShape": "!,12,11,12,12,12"
+								}
+							]
+						},
+						{
+							"formName": "m9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,4,2,3"
+								},
+								{
+									"formShape": "5,4,5,4,5,!"
+								},
+								{
+									"formShape": "5,7,5,6,5,7"
+								},
+								{
+									"formShape": "!,!,7,6,8,7"
+								},
+								{
+									"formShape": "!,12,11,12,12,12"
+								},
+								{
+									"formShape": "!,!,10,12,12,12"
+								}
+							]
+						},
+						{
+							"formName": "11",
+							"formKinds": [
+								{
+									"formShape": "!,0,0,0,2,0"
+								},
+								{
+									"formShape": "5,4,2,2,3,3"
+								},
+								{
+									"formShape": "5,4,2,2,3,3"
+								},
+								{
+									"formShape": "5,5,5,6,5,7"
+								},
+								{
+									"formShape": "5,4,5,7,!,!"
+								},
+								{
+									"formShape": "!,!,7,7,8,9"
+								},
+								{
+									"formShape": "!,12,11,12,10,10"
+								},
+								{
+									"formShape": "!,12,12,12,14,12"
+								},
+								{
+									"formShape": "17,16,14,14,15,15"
+								}
+							]
+						},
+						{
+							"formName": "m11",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,0,3,0"
+								},
+								{
+									"formShape": "!,0,0,0,1,0"
+								},
+								{
+									"formShape": "5,3,5,5,3,3"
+								},
+								{
+									"formShape": "5,5,5,5,5,7"
+								},
+								{
+									"formShape": "5,7,7,7,8,8"
+								},
+								{
+									"formShape": "!,!,7,7,8,8"
+								},
+								{
+									"formShape": "!,12,10,12,12,10"
+								}
+							]
+						},
+						{
+							"formName": "13",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,0,2,2"
+								},
+								{
+									"formShape": "5,4,5,2,2,2"
+								},
+								{
+									"formShape": "5,4,5,7,7,7"
+								},
+								{
+									"formShape": "5,7,5,6,7,5"
+								},
+								{
+									"formShape": "!,9,11,12,10,9"
+								},
+								{
+									"formShape": "!,10,11,11,10,!"
+								},
+								{
+									"formShape": "!,12,11,12,12,14"
+								}
+							]
+						},
+						{
+							"formName": "m13",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,0,1,2"
+								},
+								{
+									"formShape": "!,9,!,9,8,8"
+								},
+								{
+									"formShape": "!,10,10,11,12,12"
+								},
+								{
+									"formShape": "!,12,!,12,13,14"
+								}
+							]
+						},
+						{
+							"formName": "add9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,4,2,0"
+								},
+								{
+									"formShape": "5,4,2,4,2,!"
+								},
+								{
+									"formShape": "5,4,7,4,5,!"
+								},
+								{
+									"formShape": "!,!,7,6,5,7"
+								},
+								{
+									"formShape": "!,!,9,9,10,9"
+								},
+								{
+									"formShape": "!,12,11,9,12,9"
+								},
+								{
+									"formShape": "!,14,14,14,14,!"
+								}
+							]
+						},
+						{
+							"formName": "madd9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,4,1,0"
+								},
+								{
+									"formShape": "5,7,7,5,5,7"
+								},
+								{
+									"formShape": "5,3,2,4,!,!"
+								},
+								{
+									"formShape": "!,!,9,9,10,8"
+								},
+								{
+									"formShape": "!,12,10,9,12,!"
+								}
+							]
+						},
+						{
+							"formName": "maj9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,4,2,4"
+								},
+								{
+									"formShape": "!,2,2,2,2,4"
+								},
+								{
+									"formShape": "5,4,6,4,5,4"
+								},
+								{
+									"formShape": "!,!,7,6,9,7"
+								},
+								{
+									"formShape": "!,12,9,9,9,9"
+								},
+								{
+									"formShape": "!,12,11,13,12"
+								},
+								{
+									"formShape": "!,14,14,14,14,16"
+								}
+							]
+						},
+						{
+							"formName": "maj13",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,1,2,2"
+								},
+								{
+									"formShape": "2,2,2,2,2,4"
+								},
+								{
+									"formShape": "5,4,4,4,5,4"
+								},
+								{
+									"formShape": "5,4,6,4,7,4"
+								},
+								{
+									"formShape": "!,12,11,11,9,9"
+								},
+								{
+									"formShape": "14,14,14,14,14,16"
+								}
+							]
+						}
+					]
+				},
+				{
+					"noteName": "A#",
+					"chordForm": [
+						{
+							"formName": "maj",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,3,3,1"
+								},
+								{
+									"formShape": "6,5,3,3,3,6"
+								},
+								{
+									"formShape": "6,8,8,7,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,11,10"
+								},
+								{
+									"formShape": "!,13,12,10,11,!"
+								}
+							]
+						},
+						{
+							"formName": "min",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,3,2,1"
+								},
+								{
+									"formShape": "6,4,3,3,6,!"
+								},
+								{
+									"formShape": "6,8,8,6,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,11,9"
+								},
+								{
+									"formShape": "!,13,11,10,11,!"
+								}
+							]
+						},
+						{
+							"formName": "7",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,1,3,1"
+								},
+								{
+									"formShape": "!,1,3,3,3,4"
+								},
+								{
+									"formShape": "6,8,6,7,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,9,10"
+								}
+							]
+						},
+						{
+							"formName": "m7",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,1,2,1"
+								},
+								{
+									"formShape": "6,8,6,6,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,9,9"
+								},
+								{
+									"formShape": "!,13,11,13,11,13"
+								}
+							]
+						},
+						{
+							"formName": "maj7",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,2,3,1"
+								},
+								{
+									"formShape": "6,5,7,7,!,!"
+								},
+								{
+									"formShape": "!,!,8,7,6,5"
+								},
+								{
+									"formShape": "6,8,7,7,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,10,10"
+								},
+								{
+									"formShape": "!,13,12,10,10,!"
+								}
+							]
+						},
+						{
+							"formName": "7b5",
+							"formKinds": [
+								{
+									"formShape": "!,1,0,1,3,0"
+								},
+								{
+									"formShape": "!,1,2,1,3,!"
+								},
+								{
+									"formShape": "!,!,8,9,9,10"
+								}
+							]
+						},
+						{
+							"formName": "m7b5",
+							"formKinds": [
+								{
+									"formShape": "!,1,2,1,2,0"
+								},
+								{
+									"formShape": "6,7,6,9,9,9"
+								},
+								{
+									"formShape": "!,!,8,9,9,9"
+								},
+								{
+									"formShape": "!,11,11,9,11,!"
+								},
+								{
+									"formShape": "!,13,14,13,14,!"
+								}
+							]
+						},
+						{
+							"formName": "sus2",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,3,1,1"
+								},
+								{
+									"formShape": "6,3,3,3,6,6"
+								},
+								{
+									"formShape": "!,!,8,5,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,11,8"
+								},
+								{
+									"formShape": "!,13,10,10,11,!"
+								},
+								{
+									"formShape": "!,15,15,15,13,!"
+								}
+							]
+						},
+						{
+							"formName": "sus4",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,3,4,1"
+								},
+								{
+									"formShape": "!,!,3,3,4,6"
+								},
+								{
+									"formShape": "6,8,8,8,6,6"
+								},
+								{
+									"formShape": "!,!,8,10,11,11"
+								},
+								{
+									"formShape": "!,13,13,10,11,!"
+								}
+							]
+						},
+						{
+							"formName": "aug",
+							"formKinds": [
+								{
+									"formShape": "!,1,0,3,3,2"
+								},
+								{
+									"formShape": "6,5,4,3,3,!"
+								},
+								{
+									"formShape": "!,!,8,7,7,6"
+								},
+								{
+									"formShape": "!,!,8,7,7,10"
+								},
+								{
+									"formShape": "!,13,12,11,11,!"
+								}
+							]
+						},
+						{
+							"formName": "dim",
+							"formKinds": [
+								{
+									"formShape": "!,1,2,3,2,0"
+								},
+								{
+									"formShape": "!,!,8,6,5,6"
+								},
+								{
+									"formShape": "6,7,8,6,!,!"
+								},
+								{
+									"formShape": "!,!,8,9,11,9"
+								},
+								{
+									"formShape": "!,!,11,9,11,9"
+								},
+								{
+									"formShape": "!,!,14,15,14,12"
+								}
+							]
+						},
+						{
+							"formName": "dim7",
+							"formKinds": [
+								{
+									"formShape": "!,1,2,0,2,0"
+								},
+								{
+									"formShape": "6,7,8,6,8,6"
+								},
+								{
+									"formShape": "!,!,8,9,8,9"
+								},
+								{
+									"formShape": "!,13,14,12,14,!"
+								}
+							]
+						},
+						{
+							"formName": "5",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,3,!,!"
+								},
+								{
+									"formShape": "!,!,3,3,6,6"
+								},
+								{
+									"formShape": "6,8,8,!,!,!"
+								},
+								{
+									"formShape": "!,!,8,10,11,!"
+								},
+								{
+									"formShape": "13,13,15,15,!,!"
+								}
+							]
+						},
+						{
+							"formName": "6",
+							"formKinds": [
+								{
+									"formShape": "!,1,0,0,3,1"
+								},
+								{
+									"formShape": "6,5,3,3,3,3"
+								},
+								{
+									"formShape": "!,!,8,10,8,10"
+								},
+								{
+									"formShape": "!,13,15,15,15,15"
+								}
+							]
+						},
+						{
+							"formName": "m6",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,0,2,3"
+								},
+								{
+									"formShape": "6,8,8,6,8,6"
+								},
+								{
+									"formShape": "!,!,8,10,8,9"
+								},
+								{
+									"formShape": "!,13,11,12,11,13"
+								}
+							]
+						},
+						{
+							"formName": "mb6",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,3,2,2"
+								},
+								{
+									"formShape": "6,8,8,6,7,6"
+								},
+								{
+									"formShape": "!,13,11,11,11,13"
+								},
+								{
+									"formShape": "!,!,15,15,14,14"
+								}
+							]
+						},
+						{
+							"formName": "9",
+							"formKinds": [
+								{
+									"formShape": "!,1,0,1,1,1"
+								},
+								{
+									"formShape": "6,5,6,5,6,!"
+								},
+								{
+									"formShape": "6,8,6,7,6,8"
+								},
+								{
+									"formShape": "!,!,8,7,9,8"
+								},
+								{
+									"formShape": "!,13,12,13,13,13"
+								}
+							]
+						},
+						{
+							"formName": "m9",
+							"formKinds": [
+								{
+									"formShape": "!,4,3,1,1,1"
+								},
+								{
+									"formShape": "6,4,6,5,!,!"
+								},
+								{
+									"formShape": "6,8,6,6,6,8"
+								},
+								{
+									"formShape": "!,!,8,6,9,8"
+								},
+								{
+									"formShape": "!,13,11,13,13,!"
+								},
+								{
+									"formShape": "!,!,11,13,13,13"
+								}
+							]
+						},
+						{
+							"formName": "11",
+							"formKinds": [
+								{
+									"formShape": "!,1,1,1,3,1"
+								},
+								{
+									"formShape": "6,5,3,3,4,4"
+								},
+								{
+									"formShape": "6,5,6,8,!,!"
+								},
+								{
+									"formShape": "6,6,6,7,6,8"
+								},
+								{
+									"formShape": "!,!,8,8,9,10"
+								},
+								{
+									"formShape": "!,13,12,13,11,11"
+								},
+								{
+									"formShape": "18,17,15,15,16,16"
+								}
+							]
+						},
+						{
+							"formName": "m11",
+							"formKinds": [
+								{
+									"formShape": "!,1,1,1,2,1"
+								},
+								{
+									"formShape": "6,4,6,6,4,4"
+								},
+								{
+									"formShape": "6,6,6,6,6,8"
+								},
+								{
+									"formShape": "!,!,8,8,9,9"
+								},
+								{
+									"formShape": "!,13,11,13,13,11"
+								}
+							]
+						},
+						{
+							"formName": "13",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,1,3,3"
+								},
+								{
+									"formShape": "6,5,6,3,3,3"
+								},
+								{
+									"formShape": "6,8,6,7,8,6"
+								},
+								{
+									"formShape": "!,10,12,13,11,10"
+								},
+								{
+									"formShape": "!,11,12,12,11,!"
+								},
+								{
+									"formShape": "!,13,12,13,13,15"
+								}
+							]
+						},
+						{
+							"formName": "m13",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,1,2,3"
+								},
+								{
+									"formShape": "6,8,6,6,8,6"
+								},
+								{
+									"formShape": "!,11,11,12,13,13"
+								},
+								{
+									"formShape": "!,13,11,13,13,!"
+								}
+							]
+						},
+						{
+							"formName": "add9",
+							"formKinds": [
+								{
+									"formShape": "!,1,0,3,1,1"
+								},
+								{
+									"formShape": "!,3,3,3,3,!"
+								},
+								{
+									"formShape": "6,5,3,5,3,!"
+								},
+								{
+									"formShape": "6,5,8,5,6,!"
+								},
+								{
+									"formShape": "!,!,8,7,6,8"
+								},
+								{
+									"formShape": "!,!,10,10,11,10"
+								},
+								{
+									"formShape": "!,13,12,10,13,!"
+								}
+							]
+						},
+						{
+							"formName": "madd9",
+							"formKinds": [
+								{
+									"formShape": "!,4,3,3,1,1"
+								},
+								{
+									"formShape": "6,4,3,5,!,!"
+								},
+								{
+									"formShape": "6,8,8,6,6,8"
+								},
+								{
+									"formShape": "!,!,10,10,11,9"
+								},
+								{
+									"formShape": "!,13,11,10,13,!"
+								}
+							]
+						},
+						{
+							"formName": "maj9",
+							"formKinds": [
+								{
+									"formShape": "!,1,0,2,1,1"
+								},
+								{
+									"formShape": "!,3,3,3,3,5"
+								},
+								{
+									"formShape": "6,5,7,5,6,5"
+								},
+								{
+									"formShape": "!,!,8,7,10,8"
+								},
+								{
+									"formShape": "!,13,10,10,10,10"
+								},
+								{
+									"formShape": "!,13,12,14,13,!"
+								}
+							]
+						},
+						{
+							"formName": "maj13",
+							"formKinds": [
+								{
+									"formShape": "!,1,3,2,3,3"
+								},
+								{
+									"formShape": "6,5,5,5,6,5"
+								},
+								{
+									"formShape": "!,13,12,12,10,10"
+								}
+							]
+						}
+					]
+				},
+				{
+					"noteName": "B",
+					"chordForm": [
+						{
+							"formName": "maj",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,4,4,2"
+								},
+								{
+									"formShape": "7,9,9,8,7,7"
+								},
+								{
+									"formShape": "7,6,4,4,7,!"
+								},
+								{
+									"formShape": "!,!,9,11,12,11"
+								},
+								{
+									"formShape": "!,14,13,11,12,!"
+								}
+							]
+						},
+						{
+							"formName": "min",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,4,3,2"
+								},
+								{
+									"formShape": "7,9,9,7,7,7"
+								},
+								{
+									"formShape": "!,5,4,4,3,!"
+								},
+								{
+									"formShape": "7,5,4,4,7,!"
+								},
+								{
+									"formShape": "!,!,9,11,12,10"
+								},
+								{
+									"formShape": "!,14,12,11,12,!"
+								}
+							]
+						},
+						{
+							"formName": "7",
+							"formKinds": [
+								{
+									"formShape": "!,2,1,2,0,2"
+								},
+								{
+									"formShape": "!,2,4,2,4,2"
+								},
+								{
+									"formShape": "7,9,7,8,7,7"
+								},
+								{
+									"formShape": "!,!,9,11,10,11"
+								}
+							]
+						},
+						{
+							"formName": "m7",
+							"formKinds": [
+								{
+									"formShape": "!,2,0,2,0,2"
+								},
+								{
+									"formShape": "!,2,4,2,3,2"
+								},
+								{
+									"formShape": "7,9,7,7,7,7"
+								},
+								{
+									"formShape": "!,!,9,11,10,10"
+								}
+							]
+						},
+						{
+							"formName": "maj7",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,3,4,2"
+								},
+								{
+									"formShape": "!,2,1,3,4,!"
+								},
+								{
+									"formShape": "!,!,9,8,7,6"
+								},
+								{
+									"formShape": "7,9,8,8,7,7"
+								},
+								{
+									"formShape": "!,!,9,11,11,11"
+								},
+								{
+									"formShape": "!,14,13,11,11,!"
+								}
+							]
+						},
+						{
+							"formName": "7b5",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,2,0,1"
+								},
+								{
+									"formShape": "!,2,3,2,4,!"
+								},
+								{
+									"formShape": "!,!,9,10,10,11"
+								}
+							]
+						},
+						{
+							"formName": "m7b5",
+							"formKinds": [
+								{
+									"formShape": "!,2,0,2,0,1"
+								},
+								{
+									"formShape": "!,2,3,2,3,!"
+								},
+								{
+									"formShape": "!,!,9,10,10,10"
+								}
+							]
+						},
+						{
+							"formName": "sus2",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,4,2,2"
+								},
+								{
+									"formShape": "7,4,4,6,7,!"
+								},
+								{
+									"formShape": "!,!,9,6,7,7"
+								},
+								{
+									"formShape": "!,!,9,11,12,9"
+								},
+								{
+									"formShape": "!,14,11,11,12,!"
+								},
+								{
+									"formShape": "!,16,16,16,14,!"
+								}
+							]
+						},
+						{
+							"formName": "sus4",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,4,0,0"
+								},
+								{
+									"formShape": "!,2,2,4,5,2"
+								},
+								{
+									"formShape": "!,!,4,4,5,7"
+								},
+								{
+									"formShape": "7,9,9,9,7,7"
+								},
+								{
+									"formShape": "!,!,9,11,12,12"
+								},
+								{
+									"formShape": "!,14,14,11,12,!"
+								}
+							]
+						},
+						{
+							"formName": "aug",
+							"formKinds": [
+								{
+									"formShape": "!,2,1,0,0,3"
+								},
+								{
+									"formShape": "7,6,5,4,4,!"
+								},
+								{
+									"formShape": "!,!,9,8,8,7"
+								},
+								{
+									"formShape": "!,14,13,12,12,!"
+								}
+							]
+						},
+						{
+							"formName": "dim",
+							"formKinds": [
+								{
+									"formShape": "!,2,0,4,3,1"
+								},
+								{
+									"formShape": "!,2,3,4,3,!"
+								},
+								{
+									"formShape": "7,8,9,7,!,!"
+								},
+								{
+									"formShape": "!,!,9,7,6,7"
+								},
+								{
+									"formShape": "!,!,12,10,12,10"
+								},
+								{
+									"formShape": "!,!,15,16,15,13"
+								}
+							]
+						},
+						{
+							"formName": "dim7",
+							"formKinds": [
+								{
+									"formShape": "!,2,0,1,0,1"
+								},
+								{
+									"formShape": "!,2,3,1,3,1"
+								},
+								{
+									"formShape": "7,8,9,7,9,7"
+								},
+								{
+									"formShape": "!,!,9,10,9,10"
+								},
+								{
+									"formShape": "!,14,15,13,15,!"
+								}
+							]
+						},
+						{
+							"formName": "5",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,4,!,!"
+								},
+								{
+									"formShape": "!,!,4,4,7,7"
+								},
+								{
+									"formShape": "7,9,9,!,!,!"
+								},
+								{
+									"formShape": "!,!,9,11,12,!"
+								},
+								{
+									"formShape": "!,14,16,16,!,!"
+								}
+							]
+						},
+						{
+							"formName": "6",
+							"formKinds": [
+								{
+									"formShape": "!,2,4,4,4,4"
+								},
+								{
+									"formShape": "!,2,1,1,0,2"
+								},
+								{
+									"formShape": "7,6,4,4,4,4"
+								},
+								{
+									"formShape": "!,!,9,11,9,11"
+								}
+							]
+						},
+						{
+							"formName": "m6",
+							"formKinds": []
+						},
+						{
+							"formName": "mb6",
+							"formKinds": []
+						},
+						{
+							"formName": "9",
+							"formKinds": []
+						},
+						{
+							"formName": "m9",
+							"formKinds": []
+						},
+						{
+							"formName": "11",
+							"formKinds": []
+						},
+						{
+							"formName": "m11",
+							"formKinds": []
+						},
+						{
+							"formName": "13",
+							"formKinds": []
+						},
+						{
+							"formName": "m13",
+							"formKinds": []
+						},
+						{
+							"formName": "add9",
+							"formKinds": []
+						},
+						{
+							"formName": "madd9",
+							"formKinds": []
+						},
+						{
+							"formName": "maj9",
+							"formKinds": []
+						},
+						{
+							"formName": "maj13",
+							"formKinds": []
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Standard@chordForm",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "formName",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "formKinds"
+				}
+			]
+		},
+		{
+			"name": "Standard@chordForm@formKinds",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "formShape",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "OpenD",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "noteName"
+				},
+				{
+					"typeStr": "8",
+					"name": "chordForm",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"noteName": "A",
+					"chordForm": [
+						{
+							"formName": "maj",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,3,4,2"
+								},
+								{
+									"formShape": "!,!,!,3,4,2"
+								},
+								{
+									"formShape": "!,0,7,7,7,7"
+								},
+								{
+									"formShape": "7,7,7,7,7,7"
+								},
+								{
+									"formShape": "11,0,11,10,0,11"
+								},
+								{
+									"formShape": "!,0,11,10,12,11"
+								},
+								{
+									"formShape": "11,0,11,10,!,!"
+								}
+							]
+						},
+						{
+							"formName": "min",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,3,3,2"
+								},
+								{
+									"formShape": "!,!,!,3,3,2"
+								},
+								{
+									"formShape": "!,0,7,6,7,7"
+								},
+								{
+									"formShape": "7,7,7,6,!,!"
+								},
+								{
+									"formShape": "10,0,10,10,0,10"
+								},
+								{
+									"formShape": "!,0,10,10,12,10"
+								},
+								{
+									"formShape": "10,0,10,10,!,!"
+								},
+								{
+									"formShape": "!,12,10,10,12,10"
+								},
+								{
+									"formShape": "!,0,10,10,12,10"
+								}
+							]
+						},
+						{
+							"formName": "7",
+							"formKinds": [
+								{
+									"formShape": "!,0,5,3,4,5"
+								},
+								{
+									"formShape": "5,4,5,3,!,!"
+								},
+								{
+									"formShape": "!,0,5,7,7,5"
+								},
+								{
+									"formShape": "!,0,5,7,7,7"
+								},
+								{
+									"formShape": "!,0,7,7,7,5"
+								},
+								{
+									"formShape": "!,7,5,7,0,5"
+								},
+								{
+									"formShape": "5,7,5,7,0,7"
+								},
+								{
+									"formShape": "5,7,5,7,7,7"
+								},
+								{
+									"formShape": "5,7,7,7,!,!"
+								},
+								{
+									"formShape": "7,7,5,7,0,!"
+								},
+								{
+									"formShape": "11,0,11,10,10,11"
+								},
+								{
+									"formShape": "11,10,11,10,0,11"
+								},
+								{
+									"formShape": "!,10,11,10,12,11"
+								},
+								{
+									"formShape": "!,12,11,10,10,11"
+								},
+								{
+									"formShape": "!,0,11,13,12,11"
+								}
+							]
+						},
+						{
+							"formName": "m7",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,1,3,2"
+								},
+								{
+									"formShape": "!,3,2,1,0,2"
+								},
+								{
+									"formShape": "!,0,5,3,3,5"
+								},
+								{
+									"formShape": "!,!,!,3,3,5"
+								},
+								{
+									"formShape": "!,0,5,6,7,5"
+								},
+								{
+									"formShape": "!,0,7,6,7,5"
+								},
+								{
+									"formShape": "!,7,5,6,0,5"
+								},
+								{
+									"formShape": "!,0,5,6,7,7"
+								},
+								{
+									"formShape": "5,0,7,6,7,7"
+								},
+								{
+									"formShape": "5,7,5,6,0,7"
+								},
+								{
+									"formShape": "5,7,7,6,!,!"
+								},
+								{
+									"formShape": "7,7,5,6,0,!"
+								},
+								{
+									"formShape": "!,10,10,10,0,10"
+								},
+								{
+									"formShape": "10,0,10,10,10,10"
+								}
+							]
+						},
+						{
+							"formName": "maj7",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,4,2"
+								},
+								{
+									"formShape": "!,4,2,2,0,2"
+								},
+								{
+									"formShape": "2,4,2,2,0,!"
+								},
+								{
+									"formShape": "!,0,6,7,7,6"
+								},
+								{
+									"formShape": "!,0,7,7,7,6"
+								},
+								{
+									"formShape": "!,7,6,7,0,6"
+								},
+								{
+									"formShape": "!,0,6,7,7,7"
+								},
+								{
+									"formShape": "6,0,7,7,7,7"
+								},
+								{
+									"formShape": "6,7,6,7,0,7"
+								},
+								{
+									"formShape": "6,7,6,7,7,7"
+								},
+								{
+									"formShape": "6,7,7,7,!,!"
+								},
+								{
+									"formShape": "7,7,6,7,0,!"
+								},
+								{
+									"formShape": "!,11,11,10,0,11"
+								},
+								{
+									"formShape": "11,0,11,10,11,11"
+								},
+								{
+									"formShape": "11,11,11,10,0,!"
+								}
+							]
+						},
+						{
+							"formName": "7b5",
+							"formKinds": [
+								{
+									"formShape": "!,0,5,7,6,5"
+								},
+								{
+									"formShape": "!,0,5,7,6,7"
+								},
+								{
+									"formShape": "!,0,7,7,6,5"
+								},
+								{
+									"formShape": "!,6,5,7,0,5"
+								},
+								{
+									"formShape": "5,6,5,7,0,7"
+								},
+								{
+									"formShape": "5,6,7,7,!,!"
+								},
+								{
+									"formShape": "7,6,5,7,0,!"
+								},
+								{
+									"formShape": "!,0,11,9,10,11"
+								},
+								{
+									"formShape": "!,10,11,9,0,11"
+								},
+								{
+									"formShape": "11,0,11,9,10,!"
+								},
+								{
+									"formShape": "!,0,11,13,12,13"
+								},
+								{
+									"formShape": "!,0,13,13,12,11"
+								},
+								{
+									"formShape": "11,0,11,13,0,13"
+								},
+								{
+									"formShape": "11,0,13,13,12,!"
+								}
+							]
+						},
+						{
+							"formName": "m7b5",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,1,3,1"
+								},
+								{
+									"formShape": "!,3,1,1,0,1"
+								},
+								{
+									"formShape": "1,3,1,1,0,!"
+								},
+								{
+									"formShape": "!,0,5,6,6,5"
+								},
+								{
+									"formShape": "!,6,5,6,0,5"
+								},
+								{
+									"formShape": "!,0,5,6,6,7"
+								},
+								{
+									"formShape": "!,0,7,6,6,5"
+								},
+								{
+									"formShape": "5,0,7,6,6,!"
+								},
+								{
+									"formShape": "5,6,5,6,0,7"
+								},
+								{
+									"formShape": "5,6,7,6,!,!"
+								},
+								{
+									"formShape": "7,6,5,6,0,!"
+								},
+								{
+									"formShape": "!,10,10,9,0,10"
+								},
+								{
+									"formShape": "10,0,10,9,10,10"
+								},
+								{
+									"formShape": "10,10,10,9,0,!"
+								},
+								{
+									"formShape": "!,0,13,13,15,13"
+								}
+							]
+						},
+						{
+							"formName": "sus2",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,3,2,2"
+								},
+								{
+									"formShape": "!,!,!,3,2,2"
+								},
+								{
+									"formShape": "!,0,7,5,7,7"
+								},
+								{
+									"formShape": "7,7,7,5,!,!"
+								},
+								{
+									"formShape": "7,7,9,!,!,!"
+								},
+								{
+									"formShape": "9,7,7,!,!,!"
+								},
+								{
+									"formShape": "9,0,9,10,0,9"
+								}
+							]
+						},
+						{
+							"formName": "sus4",
+							"formKinds": [
+								{
+									"formShape": "0,0,2,3,!,!"
+								},
+								{
+									"formShape": "2,0,0,3,!,!"
+								},
+								{
+									"formShape": "!,0,0,8,7,7"
+								},
+								{
+									"formShape": "!,0,7,8,7,7"
+								},
+								{
+									"formShape": "0,7,0,8,0,7"
+								},
+								{
+									"formShape": "0,7,0,8,7,7"
+								},
+								{
+									"formShape": "!,!,7,8,7,7"
+								},
+								{
+									"formShape": "7,7,0,8,0,7"
+								},
+								{
+									"formShape": "7,7,7,8,7,7"
+								},
+								{
+									"formShape": "!,0,0,10,0,0"
+								},
+								{
+									"formShape": "!,0,0,10,0,12"
+								},
+								{
+									"formShape": "!,0,0,10,12,0"
+								},
+								{
+									"formShape": "!,0,0,10,12,12"
+								},
+								{
+									"formShape": "!,0,12,10,0,12"
+								},
+								{
+									"formShape": "!,!,0,10,12,0"
+								},
+								{
+									"formShape": "0,12,0,10,12,12"
+								}
+							]
+						},
+						{
+							"formName": "aug",
+							"formKinds": [
+								{
+									"formShape": "!,0,3,3,4,3"
+								},
+								{
+									"formShape": "!,!,!,3,4,3"
+								},
+								{
+									"formShape": "!,0,7,7,8,7"
+								},
+								{
+									"formShape": "7,8,7,7,8,7"
+								},
+								{
+									"formShape": "11,0,11,11,0,11"
+								},
+								{
+									"formShape": "!,0,11,11,12,11"
+								},
+								{
+									"formShape": "11,0,11,11,!,!"
+								},
+								{
+									"formShape": "!,12,11,11,12,11"
+								},
+								{
+									"formShape": "!,0,15,15,16,15"
+								}
+							]
+						},
+						{
+							"formName": "dim",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,3,3,1"
+								},
+								{
+									"formShape": "!,!,!,3,3,1"
+								},
+								{
+									"formShape": "!,0,7,6,6,7"
+								},
+								{
+									"formShape": "7,6,7,6,6,7"
+								},
+								{
+									"formShape": "10,0,10,9,0,10"
+								},
+								{
+									"formShape": "!,0,13,15,15,13"
+								},
+								{
+									"formShape": "!,15,13,15,0,13"
+								}
+							]
+						},
+						{
+							"formName": "dim7",
+							"formKinds": [
+								{
+									"formShape": "!,0,1,0,3,1"
+								},
+								{
+									"formShape": "1,3,1,0,0,1"
+								},
+								{
+									"formShape": "!,0,4,6,6,4"
+								},
+								{
+									"formShape": "!,6,4,6,0,4"
+								},
+								{
+									"formShape": "4,6,4,6,0,!"
+								},
+								{
+									"formShape": "10,0,10,9,9,10"
+								},
+								{
+									"formShape": "10,9,10,9,0,10"
+								},
+								{
+									"formShape": "13,0,13,0,15,13"
+								}
+							]
+						},
+						{
+							"formName": "5",
+							"formKinds": [
+								{
+									"formShape": "!,!,!,!,0,2"
+								},
+								{
+									"formShape": "!,0,2,3,!,!"
+								},
+								{
+									"formShape": "!,!,!,!,7,7"
+								},
+								{
+									"formShape": "7,7,7,!,!,!"
+								},
+								{
+									"formShape": "!,!,!,10,0,!"
+								},
+								{
+									"formShape": "!,!,!,10,12,!"
+								},
+								{
+									"formShape": "!,!,!,!,12,14"
+								}
+							]
+						},
+						{
+							"formName": "6",
+							"formKinds": [
+								{
+									"formShape": "!,0,4,3,4,2"
+								},
+								{
+									"formShape": "!,0,2,0,4,2"
+								},
+								{
+									"formShape": "!,0,2,0,4,4"
+								},
+								{
+									"formShape": "!,0,2,3,4,4"
+								},
+								{
+									"formShape": "2,0,4,3,4,4"
+								},
+								{
+									"formShape": "2,4,2,0,0,2"
+								},
+								{
+									"formShape": "2,4,2,3,4,4"
+								},
+								{
+									"formShape": "2,4,4,3,!,!"
+								},
+								{
+									"formShape": "4,0,2,3,4,2"
+								},
+								{
+									"formShape": "4,4,2,0,0,2"
+								},
+								{
+									"formShape": "4,4,2,0,0,4"
+								},
+								{
+									"formShape": "4,4,2,3,!,!"
+								},
+								{
+									"formShape": "!,!,!,3,4,4"
+								}
+							]
+						},
+						{
+							"formName": "m6",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,0,3,2"
+								},
+								{
+									"formShape": "2,3,2,0,0,2"
+								},
+								{
+									"formShape": "!,0,2,3,3,4"
+								},
+								{
+									"formShape": "!,0,4,3,3,2"
+								},
+								{
+									"formShape": "!,0,2,0,3,4"
+								},
+								{
+									"formShape": "2,0,4,3,3,!"
+								},
+								{
+									"formShape": "2,3,2,0,0,4"
+								},
+								{
+									"formShape": "2,3,4,3,!,!"
+								},
+								{
+									"formShape": "4,0,2,0,3,2"
+								},
+								{
+									"formShape": "4,0,2,3,3,2"
+								},
+								{
+									"formShape": "4,3,2,0,0,2"
+								},
+								{
+									"formShape": "!,3,2,0,0,4"
+								},
+								{
+									"formShape": "4,3,2,3,!,!"
+								}
+							]
+						},
+						{
+							"formName": "mb6",
+							"formKinds": [
+								{
+									"formShape": "!,0,3,3,3,2"
+								},
+								{
+									"formShape": "!,0,2,3,3,3"
+								},
+								{
+									"formShape": "2,0,3,3,3,3"
+								},
+								{
+									"formShape": "2,3,2,3,3,3"
+								},
+								{
+									"formShape": "2,3,3,3,!,!"
+								},
+								{
+									"formShape": "3,0,2,3,3,2"
+								},
+								{
+									"formShape": "3,3,2,3,!,!"
+								},
+								{
+									"formShape": "!,7,7,6,8,!"
+								},
+								{
+									"formShape": "!,8,7,6,7,!"
+								},
+								{
+									"formShape": "!,0,10,10,8,10"
+								},
+								{
+									"formShape": "!,8,10,10,0,10"
+								},
+								{
+									"formShape": "10,0,10,10,8,!"
+								}
+							]
+						},
+						{
+							"formName": "9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,1,2,2"
+								},
+								{
+									"formShape": "!,0,5,5,4,5"
+								},
+								{
+									"formShape": "!,0,5,5,7,5"
+								},
+								{
+									"formShape": "7,7,5,5,7,5"
+								},
+								{
+									"formShape": "!,0,9,10,10,11"
+								},
+								{
+									"formShape": "!,0,11,10,10,9"
+								},
+								{
+									"formShape": "!,10,11,10,0,9"
+								},
+								{
+									"formShape": "11,0,9,10,10,9"
+								},
+								{
+									"formShape": "!,12,14,13,14,14"
+								}
+							]
+						},
+						{
+							"formName": "m9",
+							"formKinds": [
+								{
+									"formShape": "!,2,2,1,3,!"
+								},
+								{
+									"formShape": "!,3,2,1,2,!"
+								},
+								{
+									"formShape": "!,0,5,5,3,5"
+								},
+								{
+									"formShape": "!,0,5,5,3,!"
+								},
+								{
+									"formShape": "!,0,10,10,10,9"
+								},
+								{
+									"formShape": "!,10,10,10,0,9"
+								},
+								{
+									"formShape": "10,0,9,10,10,9"
+								},
+								{
+									"formShape": "10,0,9,10,10,10"
+								},
+								{
+									"formShape": "!,14,14,13,15,!"
+								}
+							]
+						},
+						{
+							"formName": "11",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,2,1"
+								},
+								{
+									"formShape": "!,0,1,2,2,2"
+								},
+								{
+									"formShape": "1,0,2,2,2,2"
+								},
+								{
+									"formShape": "1,2,1,2,2,2"
+								},
+								{
+									"formShape": "1,2,2,2,!,!"
+								},
+								{
+									"formShape": "2,0,1,2,2,1"
+								},
+								{
+									"formShape": "2,2,1,2,!,!"
+								},
+								{
+									"formShape": "!,4,6,5,6,6"
+								},
+								{
+									"formShape": "!,0,6,5,6,6"
+								},
+								{
+									"formShape": "7,6,6,5,!,!"
+								},
+								{
+									"formShape": "11,0,9,9,11,9"
+								},
+								{
+									"formShape": "11,11,9,9,11,9"
+								},
+								{
+									"formShape": "!,12,13,14,14,14"
+								}
+							]
+						},
+						{
+							"formName": "m11",
+							"formKinds": [
+								{
+									"formShape": "0,0,2,1,3,2"
+								},
+								{
+									"formShape": "!,3,2,1,0,0"
+								},
+								{
+									"formShape": "0,0,5,3,3,5"
+								},
+								{
+									"formShape": "5,3,5,3,5,5"
+								},
+								{
+									"formShape": "0,0,5,6,7,5"
+								},
+								{
+									"formShape": "0,0,5,6,7,7"
+								},
+								{
+									"formShape": "0,0,7,6,7,5"
+								},
+								{
+									"formShape": "0,7,5,6,0,5"
+								},
+								{
+									"formShape": "0,7,5,6,0,7"
+								},
+								{
+									"formShape": "0,7,5,6,7,7"
+								},
+								{
+									"formShape": "!,0,0,10,10,10"
+								},
+								{
+									"formShape": "0,0,10,10,10,10"
+								}
+							]
+						},
+						{
+							"formName": "13",
+							"formKinds": [
+								{
+									"formShape": "!,0,5,3,4,4"
+								},
+								{
+									"formShape": "5,4,4,3,!,!"
+								},
+								{
+									"formShape": "!,10,11,12,0,11"
+								},
+								{
+									"formShape": "!,10,11,12,12,!"
+								},
+								{
+									"formShape": "!,10,11,12,0,!"
+								},
+								{
+									"formShape": "!,0,17,15,16,16"
+								},
+								{
+									"formShape": "!,16,17,15,0,16"
+								}
+							]
+						},
+						{
+							"formName": "m13",
+							"formKinds": [
+								{
+									"formShape": "5,0,4,3,3,4"
+								},
+								{
+									"formShape": "!,0,5,3,3,4"
+								},
+								{
+									"formShape": "5,3,4,3,3,4"
+								},
+								{
+									"formShape": "!,3,5,3,3,4"
+								},
+								{
+									"formShape": "5,0,4,6,0,4"
+								},
+								{
+									"formShape": "!,0,5,6,0,4"
+								},
+								{
+									"formShape": "!,10,10,12,0,10"
+								},
+								{
+									"formShape": "10,10,10,12,0,!"
+								},
+								{
+									"formShape": "10,10,10,12,12,10"
+								},
+								{
+									"formShape": "17,0,16,15,15,16"
+								}
+							]
+						},
+						{
+							"formName": "add9",
+							"formKinds": [
+								{
+									"formShape": "!,0,7,7,7,9"
+								},
+								{
+									"formShape": "!,0,9,7,7,9"
+								},
+								{
+									"formShape": "7,7,7,7,7,9"
+								},
+								{
+									"formShape": "7,7,9,7,7,9"
+								},
+								{
+									"formShape": "11,0,9,10,!,!"
+								},
+								{
+									"formShape": "!,0,11,10,0,9"
+								},
+								{
+									"formShape": "11,0,11,10,0,9"
+								},
+								{
+									"formShape": "!,0,19,19,19,21"
+								},
+								{
+									"formShape": "!,19,19,19,0,21"
+								},
+								{
+									"formShape": "!,19,21,19,0,21"
+								}
+							]
+						},
+						{
+							"formName": "madd9",
+							"formKinds": [
+								{
+									"formShape": "10,0,9,10,!,!"
+								},
+								{
+									"formShape": "10,0,10,10,0,9"
+								},
+								{
+									"formShape": "21,0,22,22,!,!"
+								},
+								{
+									"formShape": "22,0,21,22,0,21"
+								},
+								{
+									"formShape": "22,0,21,22,0,22"
+								}
+							]
+						},
+						{
+							"formName": "maj9",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,2,2"
+								},
+								{
+									"formShape": "2,2,2,2,4,2"
+								},
+								{
+									"formShape": "2,4,2,2,2,2"
+								},
+								{
+									"formShape": "!,0,6,5,4,6"
+								},
+								{
+									"formShape": "!,0,6,5,4,!"
+								},
+								{
+									"formShape": "!,0,6,5,7,6"
+								},
+								{
+									"formShape": "7,7,6,5,!,!"
+								},
+								{
+									"formShape": "!,0,11,10,11,9"
+								}
+							]
+						},
+						{
+							"formName": "maj13",
+							"formKinds": [
+								{
+									"formShape": "!,0,2,2,4,4"
+								},
+								{
+									"formShape": "2,0,4,2,4,4"
+								},
+								{
+									"formShape": "2,4,2,2,0,4"
+								},
+								{
+									"formShape": "2,4,4,2,0,4"
+								},
+								{
+									"formShape": "!,0,6,0,4,4"
+								},
+								{
+									"formShape": "!,0,6,0,4,6"
+								}
+							]
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "OpenD@chordForm",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "formName",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "formKinds"
+				}
+			]
+		},
+		{
+			"name": "OpenD@chordForm@formKinds",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "formShape",
+					"display": null
+				}
+			]
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

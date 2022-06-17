@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/C4.wav-c7f343fb66fbf47bb7e2a93e1ed8d4d4.sample"
+
+[deps]
+
+source_file="res://files/note_sounds/C4.wav"
+dest_files=[ "res://.import/C4.wav-c7f343fb66fbf47bb7e2a93e1ed8d4d4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

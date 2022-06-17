@@ -1,0 +1,1860 @@
+[gd_scene load_steps=181 format=2]
+
+[ext_resource path="res://files/fretboard_onesize_dark.svg" type="Texture" id=1]
+[ext_resource path="res://files/bg.jpg" type="Texture" id=2]
+[ext_resource path="res://files/menu.svg" type="Texture" id=3]
+[ext_resource path="res://files/vector.svg" type="Texture" id=4]
+[ext_resource path="res://files/notes/E.svg" type="Texture" id=5]
+[ext_resource path="res://files/notes/B.svg" type="Texture" id=6]
+[ext_resource path="res://files/notes/G.svg" type="Texture" id=7]
+[ext_resource path="res://files/notes/A.svg" type="Texture" id=8]
+[ext_resource path="res://files/notes/D.svg" type="Texture" id=9]
+[ext_resource path="res://Fretboard.gd" type="Script" id=10]
+[ext_resource path="res://Metronome.gd" type="Script" id=11]
+[ext_resource path="res://Drawer.gd" type="Script" id=12]
+[ext_resource path="res://files/themes/Blur.gdshader" type="Shader" id=13]
+[ext_resource path="res://files/themes/MenuBar.tres" type="Theme" id=14]
+[ext_resource path="res://files/numbers_of_frets.svg" type="Texture" id=15]
+[ext_resource path="res://files/arrow_button.svg" type="Texture" id=16]
+[ext_resource path="res://Control.gd" type="Script" id=17]
+[ext_resource path="res://Camera2D.gd" type="Script" id=18]
+[ext_resource path="res://files/themes/RootScaleButtons.tres" type="Theme" id=19]
+[ext_resource path="res://files/switchOff.svg" type="Texture" id=20]
+[ext_resource path="res://files/switchOn.svg" type="Texture" id=21]
+[ext_resource path="res://files/themes/ArrowMenuButtons.tres" type="Theme" id=22]
+[ext_resource path="res://files/themes/ChordSelectionButtons.tres" type="Theme" id=23]
+[ext_resource path="res://files/themes/RootScaleSelector.tres" type="Theme" id=24]
+[ext_resource path="res://files/Sound.svg" type="Texture" id=25]
+[ext_resource path="res://files/exit_menu.svg" type="Texture" id=26]
+[ext_resource path="res://files/more.svg" type="Texture" id=27]
+[ext_resource path="res://files/less.svg" type="Texture" id=28]
+[ext_resource path="res://files/play.svg" type="Texture" id=29]
+[ext_resource path="res://files/pause.svg" type="Texture" id=30]
+[ext_resource path="res://files/selector_left.svg" type="Texture" id=31]
+[ext_resource path="res://files/selector_right.svg" type="Texture" id=32]
+[ext_resource path="res://files/note_sounds/hat.wav" type="AudioStream" id=33]
+[ext_resource path="res://files/note_selector_1.svg" type="Texture" id=34]
+[ext_resource path="res://files/note_selector_2.svg" type="Texture" id=35]
+[ext_resource path="res://files/fretboard_color_selector_2.svg" type="Texture" id=36]
+[ext_resource path="res://files/fretboard_color_selector_1.svg" type="Texture" id=37]
+[ext_resource path="res://files/favorite.svg" type="Texture" id=38]
+[ext_resource path="res://Favorites.gd" type="Script" id=39]
+[ext_resource path="res://files/circle.svg" type="Texture" id=40]
+[ext_resource path="res://files/circle_colors.svg" type="Texture" id=41]
+[ext_resource path="res://files/minor_circle.svg" type="Texture" id=42]
+[ext_resource path="res://files/major_circle.svg" type="Texture" id=43]
+[ext_resource path="res://CirclePanel.gd" type="Script" id=44]
+[ext_resource path="res://files/arrow_white.svg" type="Texture" id=45]
+[ext_resource path="res://FeedbackPanel.gd" type="Script" id=46]
+[ext_resource path="res://files/lang_eng.svg" type="Texture" id=47]
+[ext_resource path="res://files/lang_rus.svg" type="Texture" id=48]
+[ext_resource path="res://LanguagePanel.gd" type="Script" id=49]
+[ext_resource path="res://GuitarTypePanel.gd" type="Script" id=50]
+[ext_resource path="res://AmountOfStringsGroup.tres" type="ButtonGroup" id=51]
+[ext_resource path="res://TuningPanel.gd" type="Script" id=52]
+
+[sub_resource type="ShaderMaterial" id=38]
+shader = ExtResource( 13 )
+shader_param/blurSize = 40
+
+[sub_resource type="DynamicFontData" id=53]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=54]
+size = 50
+font_data = SubResource( 53 )
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="Theme" id=44]
+CheckButton/icons/off = ExtResource( 20 )
+CheckButton/icons/on = ExtResource( 21 )
+CheckButton/styles/focus = SubResource( 42 )
+CheckButton/styles/hover = SubResource( 42 )
+CheckButton/styles/hover_pressed = SubResource( 42 )
+CheckButton/styles/normal = SubResource( 42 )
+CheckButton/styles/pressed = SubResource( 43 )
+
+[sub_resource type="DynamicFontData" id=45]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=46]
+size = 50
+font_data = SubResource( 45 )
+
+[sub_resource type="Theme" id=47]
+Label/fonts/font = SubResource( 46 )
+
+[sub_resource type="StyleBoxEmpty" id=138]
+
+[sub_resource type="StyleBoxEmpty" id=139]
+
+[sub_resource type="StyleBoxEmpty" id=140]
+
+[sub_resource type="StyleBoxEmpty" id=141]
+
+[sub_resource type="StyleBoxEmpty" id=142]
+
+[sub_resource type="Theme" id=143]
+Button/styles/disabled = SubResource( 138 )
+Button/styles/focus = SubResource( 139 )
+Button/styles/hover = SubResource( 140 )
+Button/styles/normal = SubResource( 141 )
+Button/styles/pressed = SubResource( 142 )
+
+[sub_resource type="StyleBoxEmpty" id=48]
+
+[sub_resource type="StyleBoxEmpty" id=49]
+
+[sub_resource type="StyleBoxEmpty" id=50]
+
+[sub_resource type="StyleBoxEmpty" id=51]
+
+[sub_resource type="StyleBoxEmpty" id=69]
+
+[sub_resource type="Theme" id=52]
+Button/styles/disabled = SubResource( 48 )
+Button/styles/focus = SubResource( 49 )
+Button/styles/hover = SubResource( 50 )
+Button/styles/normal = SubResource( 51 )
+Button/styles/pressed = SubResource( 69 )
+
+[sub_resource type="StyleBoxFlat" id=144]
+bg_color = Color( 0.117647, 0.117647, 0.117647, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+
+[sub_resource type="Theme" id=145]
+Button/styles/disabled = SubResource( 144 )
+Button/styles/focus = SubResource( 144 )
+Button/styles/hover = SubResource( 144 )
+Button/styles/normal = SubResource( 144 )
+Button/styles/pressed = SubResource( 144 )
+
+[sub_resource type="DynamicFontData" id=70]
+font_path = "res://files/fonts/OpenSans-ExtraBold.ttf"
+
+[sub_resource type="DynamicFont" id=71]
+size = 70
+font_data = SubResource( 70 )
+
+[sub_resource type="Theme" id=72]
+Label/fonts/font = SubResource( 71 )
+Label/styles/normal = null
+
+[sub_resource type="DynamicFontData" id=146]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=147]
+size = 80
+font_data = SubResource( 146 )
+
+[sub_resource type="StyleBoxEmpty" id=163]
+
+[sub_resource type="StyleBoxEmpty" id=161]
+
+[sub_resource type="BitmapFont" id=148]
+
+[sub_resource type="Theme" id=149]
+default_font = SubResource( 148 )
+Tree/fonts/font = SubResource( 147 )
+Tree/styles/button_pressed = SubResource( 163 )
+Tree/styles/selected = SubResource( 161 )
+Tree/styles/selected_focus = SubResource( 161 )
+
+[sub_resource type="StyleBoxFlat" id=55]
+
+[sub_resource type="Theme" id=56]
+Panel/styles/panel = SubResource( 55 )
+
+[sub_resource type="StyleBoxFlat" id=57]
+bg_color = Color( 0.0588235, 0.0588235, 0.0588235, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxEmpty" id=58]
+
+[sub_resource type="StyleBoxEmpty" id=59]
+
+[sub_resource type="StyleBoxEmpty" id=60]
+
+[sub_resource type="StyleBoxEmpty" id=61]
+
+[sub_resource type="StyleBoxEmpty" id=62]
+
+[sub_resource type="Theme" id=63]
+Button/styles/disabled = SubResource( 58 )
+Button/styles/focus = SubResource( 59 )
+Button/styles/hover = SubResource( 60 )
+Button/styles/normal = SubResource( 61 )
+Button/styles/pressed = SubResource( 62 )
+
+[sub_resource type="StyleBoxFlat" id=67]
+bg_color = Color( 0.117647, 0.117647, 0.117647, 1 )
+
+[sub_resource type="Theme" id=68]
+Panel/styles/panel = SubResource( 67 )
+
+[sub_resource type="StyleBoxEmpty" id=117]
+
+[sub_resource type="StyleBoxEmpty" id=118]
+
+[sub_resource type="StyleBoxEmpty" id=119]
+
+[sub_resource type="StyleBoxEmpty" id=120]
+
+[sub_resource type="StyleBoxEmpty" id=121]
+
+[sub_resource type="StyleBoxEmpty" id=122]
+
+[sub_resource type="Theme" id=116]
+CheckButton/icons/off = ExtResource( 32 )
+CheckButton/icons/on = ExtResource( 31 )
+CheckButton/styles/disabled = SubResource( 117 )
+CheckButton/styles/focus = SubResource( 118 )
+CheckButton/styles/hover = SubResource( 119 )
+CheckButton/styles/hover_pressed = SubResource( 120 )
+CheckButton/styles/normal = SubResource( 121 )
+CheckButton/styles/pressed = SubResource( 122 )
+
+[sub_resource type="DynamicFontData" id=64]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=65]
+size = 60
+font_data = SubResource( 64 )
+
+[sub_resource type="Theme" id=66]
+Label/fonts/font = SubResource( 65 )
+
+[sub_resource type="DynamicFontData" id=80]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=81]
+size = 90
+extra_spacing_space = 50
+font_data = SubResource( 80 )
+
+[sub_resource type="StyleBoxEmpty" id=82]
+
+[sub_resource type="StyleBoxEmpty" id=88]
+
+[sub_resource type="StyleBoxEmpty" id=89]
+
+[sub_resource type="StyleBoxEmpty" id=90]
+
+[sub_resource type="StyleBoxEmpty" id=91]
+
+[sub_resource type="Theme" id=87]
+Button/fonts/font = SubResource( 81 )
+Button/styles/disabled = SubResource( 82 )
+Button/styles/focus = SubResource( 88 )
+Button/styles/hover = SubResource( 89 )
+Button/styles/normal = SubResource( 90 )
+Button/styles/pressed = SubResource( 91 )
+
+[sub_resource type="DynamicFontData" id=175]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=176]
+size = 90
+font_data = SubResource( 175 )
+
+[sub_resource type="StyleBoxFlat" id=180]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id=181]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id=179]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="Theme" id=177]
+Button/fonts/font = SubResource( 176 )
+Button/styles/disabled = SubResource( 180 )
+Button/styles/focus = SubResource( 181 )
+Button/styles/hover = SubResource( 179 )
+Button/styles/normal = SubResource( 179 )
+Button/styles/pressed = SubResource( 180 )
+
+[sub_resource type="StyleBoxEmpty" id=110]
+
+[sub_resource type="StyleBoxEmpty" id=111]
+
+[sub_resource type="StyleBoxEmpty" id=112]
+
+[sub_resource type="StyleBoxEmpty" id=113]
+
+[sub_resource type="StyleBoxEmpty" id=114]
+
+[sub_resource type="Theme" id=115]
+Button/styles/disabled = SubResource( 110 )
+Button/styles/focus = SubResource( 111 )
+Button/styles/hover = SubResource( 112 )
+Button/styles/normal = SubResource( 113 )
+Button/styles/pressed = SubResource( 114 )
+
+[sub_resource type="StyleBoxEmpty" id=101]
+
+[sub_resource type="StyleBoxEmpty" id=102]
+
+[sub_resource type="StyleBoxEmpty" id=103]
+
+[sub_resource type="StyleBoxEmpty" id=104]
+
+[sub_resource type="StyleBoxEmpty" id=105]
+
+[sub_resource type="ImageTexture" id=106]
+lossy_quality = 0.0
+
+[sub_resource type="DynamicFontData" id=98]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=99]
+size = 140
+font_data = SubResource( 98 )
+
+[sub_resource type="Theme" id=100]
+default_font = SubResource( 99 )
+Button/styles/disabled = SubResource( 101 )
+Button/styles/focus = SubResource( 102 )
+Button/styles/hover = SubResource( 103 )
+Button/styles/normal = SubResource( 104 )
+Button/styles/pressed = SubResource( 105 )
+SpinBox/icons/updown = SubResource( 106 )
+
+[sub_resource type="DynamicFontData" id=107]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=108]
+size = 70
+font_data = SubResource( 107 )
+
+[sub_resource type="Theme" id=109]
+Label/fonts/font = SubResource( 108 )
+
+[sub_resource type="DynamicFontData" id=73]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=74]
+size = 50
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 73 )
+
+[sub_resource type="StyleBoxEmpty" id=79]
+
+[sub_resource type="StyleBoxEmpty" id=75]
+
+[sub_resource type="StyleBoxFlat" id=76]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id=78]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="Theme" id=77]
+Button/fonts/font = SubResource( 74 )
+Button/styles/disabled = SubResource( 79 )
+Button/styles/focus = SubResource( 75 )
+Button/styles/hover = SubResource( 76 )
+Button/styles/normal = SubResource( 76 )
+Button/styles/pressed = SubResource( 78 )
+
+[sub_resource type="AudioStreamGenerator" id=123]
+
+[sub_resource type="StyleBoxEmpty" id=124]
+
+[sub_resource type="StyleBoxEmpty" id=125]
+
+[sub_resource type="StyleBoxEmpty" id=126]
+
+[sub_resource type="StyleBoxEmpty" id=127]
+
+[sub_resource type="StyleBoxEmpty" id=128]
+
+[sub_resource type="StyleBoxEmpty" id=129]
+
+[sub_resource type="Theme" id=130]
+CheckButton/icons/off = ExtResource( 34 )
+CheckButton/icons/on = ExtResource( 35 )
+CheckButton/styles/disabled = SubResource( 124 )
+CheckButton/styles/focus = SubResource( 125 )
+CheckButton/styles/hover = SubResource( 126 )
+CheckButton/styles/hover_pressed = SubResource( 127 )
+CheckButton/styles/normal = SubResource( 128 )
+CheckButton/styles/pressed = SubResource( 129 )
+
+[sub_resource type="StyleBoxEmpty" id=131]
+
+[sub_resource type="StyleBoxEmpty" id=132]
+
+[sub_resource type="StyleBoxEmpty" id=133]
+
+[sub_resource type="StyleBoxEmpty" id=134]
+
+[sub_resource type="StyleBoxEmpty" id=135]
+
+[sub_resource type="StyleBoxEmpty" id=136]
+
+[sub_resource type="Theme" id=137]
+CheckButton/icons/off = ExtResource( 37 )
+CheckButton/icons/on = ExtResource( 36 )
+CheckButton/styles/disabled = SubResource( 131 )
+CheckButton/styles/focus = SubResource( 132 )
+CheckButton/styles/hover = SubResource( 133 )
+CheckButton/styles/hover_pressed = SubResource( 134 )
+CheckButton/styles/normal = SubResource( 135 )
+CheckButton/styles/pressed = SubResource( 136 )
+
+[sub_resource type="Theme" id=162]
+Button/styles/disabled = SubResource( 161 )
+Button/styles/focus = SubResource( 161 )
+Button/styles/hover = SubResource( 161 )
+Button/styles/normal = SubResource( 161 )
+Button/styles/pressed = SubResource( 161 )
+
+[sub_resource type="StyleBoxEmpty" id=164]
+
+[sub_resource type="StyleBoxEmpty" id=165]
+
+[sub_resource type="StyleBoxEmpty" id=166]
+
+[sub_resource type="StyleBoxEmpty" id=151]
+
+[sub_resource type="StyleBoxEmpty" id=152]
+
+[sub_resource type="Theme" id=153]
+Button/styles/disabled = SubResource( 164 )
+Button/styles/focus = SubResource( 165 )
+Button/styles/hover = SubResource( 166 )
+Button/styles/normal = SubResource( 151 )
+Button/styles/pressed = SubResource( 152 )
+
+[sub_resource type="StyleBoxEmpty" id=169]
+
+[sub_resource type="StyleBoxEmpty" id=170]
+
+[sub_resource type="StyleBoxEmpty" id=171]
+
+[sub_resource type="StyleBoxEmpty" id=172]
+
+[sub_resource type="StyleBoxEmpty" id=173]
+
+[sub_resource type="StyleBoxEmpty" id=174]
+
+[sub_resource type="Theme" id=168]
+CheckButton/icons/off = ExtResource( 47 )
+CheckButton/icons/on = ExtResource( 48 )
+CheckButton/styles/disabled = SubResource( 169 )
+CheckButton/styles/focus = SubResource( 170 )
+CheckButton/styles/hover = SubResource( 171 )
+CheckButton/styles/hover_pressed = SubResource( 172 )
+CheckButton/styles/normal = SubResource( 173 )
+CheckButton/styles/pressed = SubResource( 174 )
+
+[sub_resource type="DynamicFontData" id=154]
+font_path = "res://files/fonts/OpenSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=155]
+size = 40
+font_data = SubResource( 154 )
+
+[sub_resource type="StyleBoxEmpty" id=159]
+
+[sub_resource type="StyleBoxEmpty" id=160]
+
+[sub_resource type="StyleBoxFlat" id=156]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id=157]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="Theme" id=158]
+Button/fonts/font = SubResource( 155 )
+Button/styles/disabled = SubResource( 159 )
+Button/styles/focus = SubResource( 160 )
+Button/styles/hover = SubResource( 156 )
+Button/styles/normal = SubResource( 156 )
+Button/styles/pressed = SubResource( 157 )
+
+[node name="FirstScene" type="Node2D"]
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+script = ExtResource( 18 )
+
+[node name="Bg" type="Sprite" parent="Camera"]
+show_behind_parent = true
+position = Vector2( 560, 1480 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fretboard" type="Sprite" parent="." groups=["Fretboard"]]
+position = Vector2( 540, 4000 )
+scale = Vector2( 0.9, 1 )
+texture = ExtResource( 1 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NumbersOfFrets" type="Sprite" parent="Fretboard"]
+self_modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( -496, -128 )
+scale = Vector2( 1.14, 1.14 )
+texture = ExtResource( 15 )
+
+[node name="String0" type="Sprite" parent="Fretboard"]
+position = Vector2( -368.778, -3959 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="StringSound" type="AudioStreamPlayer" parent="Fretboard/String0"]
+
+[node name="String1" type="Sprite" parent="Fretboard"]
+position = Vector2( -221, -3960 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="StringSound" type="AudioStreamPlayer" parent="Fretboard/String1"]
+
+[node name="String2" type="Sprite" parent="Fretboard"]
+position = Vector2( -71, -3960 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 9 )
+
+[node name="StringSound" type="AudioStreamPlayer" parent="Fretboard/String2"]
+
+[node name="String3" type="Sprite" parent="Fretboard"]
+position = Vector2( 82, -3960 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 7 )
+
+[node name="StringSound" type="AudioStreamPlayer" parent="Fretboard/String3"]
+
+[node name="String4" type="Sprite" parent="Fretboard"]
+position = Vector2( 232, -3960 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 6 )
+
+[node name="StringSound" type="AudioStreamPlayer" parent="Fretboard/String4"]
+
+[node name="String5" type="Sprite" parent="Fretboard"]
+position = Vector2( 381.5, -3960 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="StringSound" type="AudioStreamPlayer" parent="Fretboard/String5"]
+
+[node name="Drawer" type="Node2D" parent="Fretboard" groups=["Drawer"]]
+script = ExtResource( 12 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+margin_right = 1080.0
+margin_bottom = 2400.0
+mouse_filter = 2
+script = ExtResource( 17 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+self_modulate = Color( 0.117647, 0.117647, 0.117647, 1 )
+material = SubResource( 38 )
+margin_top = 1500.0
+margin_right = 1080.0
+margin_bottom = 2400.0
+theme = ExtResource( 14 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RootNoteButton" type="Button" parent="CanvasLayer/Control/Panel"]
+margin_left = 128.0
+margin_top = 356.0
+margin_right = 448.0
+margin_bottom = 676.0
+theme = ExtResource( 19 )
+text = "A"
+
+[node name="ChordTypeButton" type="Button" parent="CanvasLayer/Control/Panel"]
+margin_left = 640.0
+margin_top = 356.0
+margin_right = 960.0
+margin_bottom = 516.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource( 19 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 54 )
+text = "maj"
+
+[node name="ScaleTypeButton" type="Button" parent="CanvasLayer/Control/Panel"]
+visible = false
+margin_left = 640.0
+margin_top = 356.0
+margin_right = 960.0
+margin_bottom = 516.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource( 19 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 54 )
+text = "none"
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/Control/Panel"]
+margin_left = 736.0
+margin_top = 572.0
+margin_right = 925.0
+margin_bottom = 676.0
+rect_scale = Vector2( 0.7, 0.7 )
+theme = SubResource( 44 )
+
+[node name="Scales" type="Label" parent="CanvasLayer/Control/Panel/CheckButton"]
+margin_left = 205.714
+margin_top = -22.8572
+margin_right = 359.714
+margin_bottom = 118.143
+theme = SubResource( 47 )
+text = "scales"
+align = 1
+valign = 1
+
+[node name="Chords" type="Label" parent="CanvasLayer/Control/Panel/CheckButton"]
+margin_left = -194.286
+margin_top = -22.8572
+margin_right = -18.2856
+margin_bottom = 118.143
+grow_horizontal = 0
+theme = SubResource( 47 )
+text = "chords"
+align = 1
+valign = 1
+
+[node name="PanelArrowButton" type="Button" parent="CanvasLayer/Control/Panel"]
+margin_left = 944.0
+margin_top = 76.0
+margin_right = 1026.0
+margin_bottom = 124.0
+rect_pivot_offset = Vector2( 41, 24 )
+theme = ExtResource( 22 )
+toggle_mode = true
+icon = ExtResource( 4 )
+expand_icon = true
+
+[node name="FavoriteButton" type="Button" parent="CanvasLayer/Control/Panel"]
+margin_left = 816.0
+margin_top = 60.0
+margin_right = 949.0
+margin_bottom = 194.0
+rect_scale = Vector2( 0.6, 0.6 )
+theme = SubResource( 143 )
+icon = ExtResource( 38 )
+
+[node name="MoreButton" type="Button" parent="CanvasLayer/Control/Panel"]
+margin_left = 48.0
+margin_top = 44.0
+margin_right = 160.0
+margin_bottom = 156.0
+theme = ExtResource( 22 )
+icon = ExtResource( 3 )
+expand_icon = true
+
+[node name="SoundButton" type="Button" parent="CanvasLayer/Control/Panel"]
+margin_left = 192.0
+margin_top = 60.0
+margin_right = 642.0
+margin_bottom = 464.0
+rect_scale = Vector2( 0.2, 0.2 )
+theme = SubResource( 52 )
+action_mode = 0
+icon = ExtResource( 25 )
+
+[node name="UpButton" type="Button" parent="CanvasLayer/Control/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -196.0
+margin_top = 44.0
+margin_right = 196.0
+margin_bottom = 160.0
+theme = ExtResource( 23 )
+expand_icon = true
+
+[node name="ArrowButton" type="Sprite" parent="CanvasLayer/Control/Panel/UpButton"]
+position = Vector2( 196, 56 )
+scale = Vector2( 0.385593, 0.385593 )
+texture = ExtResource( 16 )
+
+[node name="DownButton" type="Button" parent="CanvasLayer/Control/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 196.0
+margin_top = 275.0
+margin_right = 588.0
+margin_bottom = 391.0
+rect_rotation = 180.0
+theme = ExtResource( 23 )
+expand_icon = true
+
+[node name="ArrowButton" type="Sprite" parent="CanvasLayer/Control/Panel/DownButton"]
+position = Vector2( 196, 56 )
+scale = Vector2( 0.385593, 0.385593 )
+texture = ExtResource( 16 )
+
+[node name="RootNotePanel" type="Panel" parent="CanvasLayer/Control/Panel"]
+visible = false
+self_modulate = Color( 0.117647, 0.117647, 0.117647, 1 )
+use_parent_material = true
+margin_top = 340.0
+margin_right = 540.0
+margin_bottom = 764.0
+focus_mode = 1
+mouse_filter = 1
+theme = ExtResource( 24 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/Panel/RootNotePanel"]
+margin_right = 540.0
+margin_bottom = 424.0
+focus_mode = 1
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Panel/RootNotePanel/ScrollContainer"]
+margin_right = 540.0
+margin_bottom = 424.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ChordTypePanel" type="Panel" parent="CanvasLayer/Control/Panel"]
+visible = false
+self_modulate = Color( 0.117647, 0.117647, 0.117647, 1 )
+use_parent_material = true
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 1080.0
+margin_bottom = 764.0
+theme = ExtResource( 24 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/Panel/ChordTypePanel"]
+margin_right = 540.0
+margin_bottom = 424.0
+focus_mode = 1
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Panel/ChordTypePanel/ScrollContainer"]
+margin_right = 540.0
+margin_bottom = 424.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScaleTypePanel" type="Panel" parent="CanvasLayer/Control/Panel"]
+visible = false
+self_modulate = Color( 0.117647, 0.117647, 0.117647, 1 )
+use_parent_material = true
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 1080.0
+margin_bottom = 764.0
+theme = ExtResource( 24 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/Panel/ScaleTypePanel"]
+margin_right = 540.0
+margin_bottom = 424.0
+focus_mode = 1
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Panel/ScaleTypePanel/ScrollContainer"]
+margin_right = 540.0
+margin_bottom = 424.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FavoritePanel" type="Panel" parent="CanvasLayer/Control/Panel" groups=["Favorite"]]
+self_modulate = Color( 0.117647, 0.117647, 0.117647, 1 )
+material = SubResource( 38 )
+margin_top = 764.0
+margin_right = 1080.0
+margin_bottom = 1664.0
+theme = ExtResource( 14 )
+script = ExtResource( 39 )
+
+[node name="ClosePanelButton" type="Button" parent="CanvasLayer/Control/Panel/FavoritePanel"]
+margin_right = 2160.0
+margin_bottom = 272.0
+rect_scale = Vector2( 0.5, 0.5 )
+theme = SubResource( 145 )
+toggle_mode = true
+
+[node name="ArrowButton" type="Sprite" parent="CanvasLayer/Control/Panel/FavoritePanel/ClosePanelButton"]
+position = Vector2( 1088, 144 )
+rotation = -3.14159
+scale = Vector2( 0.45121, 0.45121 )
+texture = ExtResource( 4 )
+
+[node name="FavoriteLabel" type="Label" parent="CanvasLayer/Control/Panel/FavoritePanel"]
+margin_left = 392.0
+margin_top = 160.0
+margin_right = 693.0
+margin_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource( 72 )
+text = "Saved"
+align = 1
+valign = 1
+
+[node name="FavoriteList" type="Tree" parent="CanvasLayer/Control/Panel/FavoritePanel"]
+margin_top = 272.0
+margin_right = 1080.0
+margin_bottom = 904.0
+theme = SubResource( 149 )
+allow_reselect = true
+hide_folding = true
+
+[node name="MenuPanel" type="Panel" parent="CanvasLayer/Control"]
+margin_top = 2400.0
+margin_right = 1080.0
+margin_bottom = 4600.0
+theme = SubResource( 56 )
+custom_styles/panel = SubResource( 57 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SettingsLabel" type="Label" parent="CanvasLayer/Control/MenuPanel"]
+margin_left = 392.0
+margin_top = 40.0
+margin_right = 687.0
+margin_bottom = 136.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource( 72 )
+text = "Features"
+align = 1
+valign = 1
+
+[node name="ExitMenuButton" type="Button" parent="CanvasLayer/Control/MenuPanel"]
+margin_left = 960.0
+margin_top = 8.0
+margin_right = 1200.0
+margin_bottom = 338.0
+rect_scale = Vector2( 0.5, 0.5 )
+theme = SubResource( 63 )
+icon = ExtResource( 26 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/MenuPanel"]
+margin_top = 184.0
+margin_right = 1080.0
+margin_bottom = 2200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/MenuPanel/ScrollContainer"]
+margin_bottom = 5488.0
+
+[node name="Helper" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer"]
+margin_bottom = 5488.0
+text = "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+[node name="HandPanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 128.0
+margin_right = 1080.0
+margin_bottom = 400.0
+mouse_filter = 2
+theme = SubResource( 68 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HandSelector" type="CheckButton" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/HandPanel"]
+margin_left = 56.0
+margin_top = 64.0
+margin_right = 1036.0
+margin_bottom = 200.0
+theme = SubResource( 116 )
+
+[node name="HandLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/HandPanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 242.0
+theme = SubResource( 66 )
+text = "Handedness"
+
+[node name="TuningPanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 560.0
+margin_right = 1080.0
+margin_bottom = 832.0
+rect_pivot_offset = Vector2( -360, 248 )
+mouse_filter = 2
+theme = SubResource( 68 )
+script = ExtResource( 52 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TuningButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 192.0
+theme = SubResource( 87 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "E A D G B E"
+
+[node name="TuningLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 296.0
+rect_pivot_offset = Vector2( -416, 360 )
+theme = SubResource( 66 )
+text = "Tuning"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TuningList" type="Tree" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel"]
+visible = false
+margin_right = 1080.0
+margin_bottom = 272.0
+theme = SubResource( 149 )
+allow_reselect = true
+hide_folding = true
+
+[node name="GuitarTypePanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 992.0
+margin_right = 1080.0
+margin_bottom = 1264.0
+rect_pivot_offset = Vector2( -360, 248 )
+mouse_filter = 2
+theme = SubResource( 68 )
+script = ExtResource( 50 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GuitarTypeLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/GuitarTypePanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 296.0
+rect_pivot_offset = Vector2( -416, 360 )
+theme = SubResource( 66 )
+text = "Strings"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GuitarTypeButton4" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/GuitarTypePanel" groups=["NumberOfStrings"]]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 192.0
+margin_bottom = 198.0
+theme = SubResource( 177 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+group = ExtResource( 51 )
+text = "4"
+
+[node name="GuitarTypeButton5" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/GuitarTypePanel" groups=["NumberOfStrings"]]
+margin_left = 272.0
+margin_top = 64.0
+margin_right = 400.0
+margin_bottom = 198.0
+theme = SubResource( 177 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+group = ExtResource( 51 )
+text = "5"
+
+[node name="GuitarTypeButton6" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/GuitarTypePanel" groups=["NumberOfStrings"]]
+margin_left = 480.0
+margin_top = 64.0
+margin_right = 608.0
+margin_bottom = 198.0
+theme = SubResource( 177 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+group = ExtResource( 51 )
+text = "6"
+
+[node name="GuitarTypeButton7" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/GuitarTypePanel" groups=["NumberOfStrings"]]
+margin_left = 688.0
+margin_top = 64.0
+margin_right = 816.0
+margin_bottom = 198.0
+theme = SubResource( 177 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+group = ExtResource( 51 )
+text = "7"
+
+[node name="GuitarTypeButton8" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/GuitarTypePanel" groups=["NumberOfStrings"]]
+margin_left = 896.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 198.0
+theme = SubResource( 177 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+group = ExtResource( 51 )
+text = "8"
+
+[node name="MetronomePanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 1424.0
+margin_right = 1080.0
+margin_bottom = 1856.0
+rect_pivot_offset = Vector2( -360, 248 )
+mouse_filter = 2
+theme = SubResource( 68 )
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+audio = ExtResource( 33 )
+
+[node name="MoreBPMButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+margin_left = 512.0
+margin_top = 152.0
+margin_right = 640.0
+margin_bottom = 280.0
+rect_scale = Vector2( 0.75, 0.75 )
+theme = SubResource( 115 )
+icon = ExtResource( 27 )
+
+[node name="LessBPMButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+margin_left = 512.0
+margin_top = 256.0
+margin_right = 640.0
+margin_bottom = 384.0
+rect_scale = Vector2( 0.75, 0.75 )
+theme = SubResource( 115 )
+icon = ExtResource( 28 )
+
+[node name="BPMSpinBox" type="SpinBox" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+margin_left = 64.0
+margin_top = 152.0
+margin_right = 512.0
+margin_bottom = 354.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_clip_content = true
+theme = SubResource( 100 )
+min_value = 40.0
+max_value = 240.0
+value = 120.0
+rounded = true
+align = 1
+
+[node name="BPM" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 512.0
+margin_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme = SubResource( 109 )
+text = "BPM"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayMetronomeButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+margin_left = 704.0
+margin_top = 152.0
+margin_right = 1024.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( 112, 108 )
+theme = SubResource( 77 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+
+[node name="Play" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel/PlayMetronomeButton"]
+position = Vector2( 168, 104 )
+scale = Vector2( 0.429868, 0.429868 )
+texture = ExtResource( 29 )
+
+[node name="Pause" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel/PlayMetronomeButton"]
+visible = false
+position = Vector2( 160, 104 )
+scale = Vector2( 0.0959247, 0.0959247 )
+texture = ExtResource( 30 )
+
+[node name="MetronomeSound" type="AudioStreamPlayer" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+stream = SubResource( 123 )
+
+[node name="MetronomeLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 408.0
+rect_pivot_offset = Vector2( -416, 360 )
+theme = SubResource( 66 )
+text = "Metronome"
+
+[node name="NoteViewPanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 2016.0
+margin_right = 1080.0
+margin_bottom = 2448.0
+rect_pivot_offset = Vector2( -40, 392 )
+mouse_filter = 2
+theme = SubResource( 68 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NoteLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/NoteViewPanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 242.0
+rect_pivot_offset = Vector2( -96, 488 )
+theme = SubResource( 66 )
+text = "Notes"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NoteView" type="CheckButton" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/NoteViewPanel"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 192.0
+theme = SubResource( 130 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FreatboardColorPanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 2608.0
+margin_right = 1080.0
+margin_bottom = 2864.0
+rect_pivot_offset = Vector2( -360, 248 )
+mouse_filter = 2
+theme = SubResource( 68 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FretboardColorButton" type="CheckButton" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FreatboardColorPanel"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 1032.0
+margin_bottom = 192.0
+theme = SubResource( 137 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FretboardColorLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FreatboardColorPanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 519.0
+rect_pivot_offset = Vector2( -96, 488 )
+theme = SubResource( 66 )
+text = "Fretboard color"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CirclePanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 3024.0
+margin_right = 1080.0
+margin_bottom = 4120.0
+rect_pivot_offset = Vector2( -360, 248 )
+mouse_filter = 2
+theme = SubResource( 68 )
+script = ExtResource( 44 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Major" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+position = Vector2( 536, 904 )
+texture = ExtResource( 43 )
+
+[node name="Minor" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+position = Vector2( 536, 1000 )
+texture = ExtResource( 42 )
+
+[node name="CircleLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 519.0
+rect_pivot_offset = Vector2( -96, 488 )
+theme = SubResource( 66 )
+text = "Circle of fifths"
+
+[node name="Circle" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+position = Vector2( 536, 440 )
+scale = Vector2( 1.15102, 1.15102 )
+texture = ExtResource( 40 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Colors" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+position = Vector2( 536, 204 )
+scale = Vector2( 1.163, 1.163 )
+texture = ExtResource( 41 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RotateRightButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+margin_left = 832.0
+margin_right = 1080.0
+margin_bottom = 840.0
+theme = SubResource( 162 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RotateLeftButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+margin_right = 256.0
+margin_bottom = 840.0
+theme = SubResource( 153 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ArrowLeft" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+position = Vector2( 64, 440 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 45 )
+
+[node name="ArrowRight" type="Sprite" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel"]
+position = Vector2( 1024, 440 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 45 )
+
+[node name="LanguagePanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 4280.0
+margin_right = 1080.0
+margin_bottom = 4552.0
+mouse_filter = 2
+theme = SubResource( 68 )
+script = ExtResource( 49 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LanguageLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/LanguagePanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 242.0
+theme = SubResource( 66 )
+text = "Language"
+
+[node name="LanguageButton" type="CheckButton" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/LanguagePanel"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 200.0
+theme = SubResource( 168 )
+
+[node name="FeedbackPanel" type="Panel" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper"]
+margin_top = 4712.0
+margin_right = 1080.0
+margin_bottom = 5288.0
+rect_pivot_offset = Vector2( -360, 248 )
+mouse_filter = 2
+theme = SubResource( 68 )
+script = ExtResource( 46 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FeedbackLabel" type="Label" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel"]
+margin_left = 56.0
+margin_top = -96.0
+margin_right = 519.0
+rect_pivot_offset = Vector2( -96, 488 )
+theme = SubResource( 66 )
+text = "Feedback"
+
+[node name="ContactSupportButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 512.0
+margin_bottom = 192.0
+theme = SubResource( 158 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Contact support"
+
+[node name="BugReportButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel"]
+margin_left = 576.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 192.0
+theme = SubResource( 158 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Report a bug"
+
+[node name="FeatureRequestButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel"]
+margin_left = 64.0
+margin_top = 224.0
+margin_right = 512.0
+margin_bottom = 352.0
+theme = SubResource( 158 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Request a feature"
+
+[node name="FeedbackButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel"]
+margin_left = 576.0
+margin_top = 224.0
+margin_right = 1024.0
+margin_bottom = 352.0
+theme = SubResource( 158 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Leave a feedback"
+
+[node name="DonateButton" type="Button" parent="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel"]
+margin_left = 320.0
+margin_top = 384.0
+margin_right = 768.0
+margin_bottom = 512.0
+theme = SubResource( 158 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Donate"
+
+[connection signal="pressed" from="CanvasLayer/Control/Panel/RootNoteButton" to="CanvasLayer/Control" method="_on_RootNoteButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/ChordTypeButton" to="CanvasLayer/Control" method="_on_ChordTypeButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/ScaleTypeButton" to="CanvasLayer/Control" method="_on_ScaleTypeButton_pressed"]
+[connection signal="toggled" from="CanvasLayer/Control/Panel/CheckButton" to="CanvasLayer/Control" method="_on_CheckButton_toggled"]
+[connection signal="toggled" from="CanvasLayer/Control/Panel/PanelArrowButton" to="CanvasLayer/Control" method="_on_PanelArrowButton_toggled"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/FavoriteButton" to="CanvasLayer/Control/Panel/FavoritePanel" method="_on_FavoriteButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/MoreButton" to="CanvasLayer/Control" method="_on_MoreButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/SoundButton" to="Fretboard" method="_on_SoundButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/UpButton" to="Fretboard" method="_on_UpButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/UpButton" to="CanvasLayer/Control/Panel/FavoritePanel" method="_on_Changes"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/DownButton" to="Fretboard" method="_on_DownButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/DownButton" to="CanvasLayer/Control/Panel/FavoritePanel" method="_on_Changes"]
+[connection signal="visibility_changed" from="CanvasLayer/Control/Panel/RootNotePanel" to="CanvasLayer/Control/Panel/FavoriteButton" method="_on_Changes"]
+[connection signal="visibility_changed" from="CanvasLayer/Control/Panel/ChordTypePanel" to="CanvasLayer/Control/Panel/FavoriteButton" method="_on_Changes"]
+[connection signal="toggled" from="CanvasLayer/Control/Panel/FavoritePanel/ClosePanelButton" to="CanvasLayer/Control" method="_on_ClosePanelButton_toggled"]
+[connection signal="button_pressed" from="CanvasLayer/Control/Panel/FavoritePanel/FavoriteList" to="CanvasLayer/Control/Panel/FavoritePanel" method="_on_FavoriteList_button_pressed"]
+[connection signal="gui_input" from="CanvasLayer/Control/Panel/FavoritePanel/FavoriteList" to="CanvasLayer/Control/Panel/FavoritePanel" method="_on_FavoriteList_gui_input"]
+[connection signal="item_activated" from="CanvasLayer/Control/Panel/FavoritePanel/FavoriteList" to="CanvasLayer/Control/Panel/FavoritePanel" method="_on_FavoriteList_item_activated"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ExitMenuButton" to="CanvasLayer/Control" method="_on_ExitMenuButton_pressed"]
+[connection signal="toggled" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/HandPanel/HandSelector" to="Fretboard" method="_on_HandSelector_toggled"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel/TuningButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel" method="_on_TuningButton_pressed"]
+[connection signal="gui_input" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel/TuningList" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel" method="_on_TuningList_gui_input"]
+[connection signal="item_activated" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel/TuningList" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/TuningPanel" method="_on_TuningList_item_activated"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel/MoreBPMButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel" method="_on_MoreBPMButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel/LessBPMButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel" method="_on_LessBPMButton_pressed"]
+[connection signal="toggled" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel/PlayMetronomeButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/MetronomePanel" method="_on_PlayMetronomeButton_toggled"]
+[connection signal="toggled" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/NoteViewPanel/NoteView" to="Fretboard" method="_on_NoteView_toggled"]
+[connection signal="toggled" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/NoteViewPanel/NoteView" to="CanvasLayer/Control" method="_on_NoteView_toggled"]
+[connection signal="toggled" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FreatboardColorPanel/FretboardColorButton" to="CanvasLayer/Control" method="_on_FretboardColorButton_toggled"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel/RotateRightButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel" method="_on_RotateRightButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel/RotateLeftButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/CirclePanel" method="_on_RotateLeftButton_pressed"]
+[connection signal="toggled" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/LanguagePanel/LanguageButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/LanguagePanel" method="_on_LanguageButton_toggled"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel/ContactSupportButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel" method="_on_ContactSupportButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel/BugReportButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel" method="_on_BugReportButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel/FeatureRequestButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel" method="_on_FeatureRequestButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel/FeedbackButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel" method="_on_FeedbackButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel/DonateButton" to="CanvasLayer/Control/MenuPanel/ScrollContainer/VBoxContainer/Helper/FeedbackPanel" method="_on_DonateButton_pressed"]
